@@ -8,18 +8,25 @@
   <link href="https://blog.shameerkashif.me/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://pubsubhubbub.appspot.com" rel="hub"/>
   <link href="https://bridgy-fed.superfeedr.com" rel="hub"/>
-  <updated>2023-06-27T09:26:26.192Z</updated>
+  <updated>2023-06-27T10:40:20.784Z</updated>
   <author>
     <name><![CDATA[@hash3liZer]]></name>
   </author>
+  <category term="ctf" scheme="https://blog.shameerkashif.me/?tags=ctf" />
+  <category term="writeups" scheme="https://blog.shameerkashif.me/?tags=writeups" />
+  <category term="google-ctf-2023" scheme="https://blog.shameerkashif.me/?tags=google-ctf-2023" />
   <entry>
-    <title type="html"><![CDATA[undefined]]></title>
-    <link href="https://blog.shameerkashif.me/blogs/2023" />
-    <id>https://blog.shameerkashif.me/blogs/2023</id>
-    <published>2023-06-27T09:25:45.959Z</published>
-    <updated>2023-06-27T09:25:45.959Z</updated>
+    <title type="html"><![CDATA[Google CTF 2023 Under Construction (Web) Writeup]]></title>
+    <link href="https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2024" />
+    <id>https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2024</id>
+    <published>2023-06-27T00:00:00.000Z</published>
+    <updated>2023-06-27T10:39:44.112Z</updated>
+    <summary type="html"><![CDATA[Writeup for under construction challenge from google ctf 2023]]></summary>
     <content type="html">
-      <![CDATA[<h1 id="introduction"><a href="#introduction">Introduction</a></h1><p>Here we go with some random data here as you can bruhs.</p><!-- HTML_TAG_START --><pre class="shiki material-default" python="true"><div class="language-id">python</div><div class='code-container'><code><div class='line'>import sys</div><div class='line'>import os</div><div class='line'></div><div class='line'>def main():</div><div class='line'>  print()</div><div class='line'></div><div class='line'>if __name__ == "__main__":</div><div class='line'>  main()</div></code></div></pre><!-- HTML_TAG_END -->]]>
-    </content>undefined
+      <![CDATA[<h1 id="introduction"><a href="#introduction">Introduction</a></h1><h1 id="table-of-contents"><a href="#table-of-contents">Table of Contents</a></h1><h1 id="writeup"><a href="#writeup">Writeup</a></h1><h1 id="afterwards"><a href="#afterwards">Afterwards</a></h1>]]>
+    </content>
+    <category term="ctf" scheme="https://blog.shameerkashif.me/?tags=ctf" />
+    <category term="writeups" scheme="https://blog.shameerkashif.me/?tags=writeups" />
+    <category term="google-ctf-2023" scheme="https://blog.shameerkashif.me/?tags=google-ctf-2023" />
   </entry>
 </feed>
