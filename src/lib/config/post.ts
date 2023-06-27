@@ -5,27 +5,28 @@ export const post: PostConfig = {
     post: ['mastodon']
   },
   comment: {
-    use: ['Webmention', 'Giscus', 'Remark42'],
+    // use: ['Webmention', 'Giscus', 'Remark42'],
+    use: ['Giscus'],
     style: 'boxed',
-    webmention: {
-      username: 'seviche.cc',
-      sortBy: 'created',
-      sortDir: 'down',
-      form: true,
-      commentParade: true
-    },
+    // webmention: {
+    //   username: 'seviche.cc',
+    //   sortBy: 'created',
+    //   sortDir: 'down',
+    //   form: true,
+    //   commentParade: true
+    // },
     giscus: {
       // src: 'https://giscus.kwaa.dev/client.js',
-      repo: 'Sevichecc/urara-giscus',
+      repo: 'hash3liZer/khatta',
       repoID: 'R_kgDOHSra4Q',
       category: 'General',
       categoryID: 'DIC_kwDOHSra4c4CO9ua',
-      theme: 'light',
+      theme: 'dark',
       lang: 'en'
     },
-    remark42: {
-      host: 'https://remark42.seviche.cc',
-      no_footer: true
-    }
+    // remark42: {
+    //   host: 'https://remark42.seviche.cc',
+    //   no_footer: true
+    // }
   }
 }
