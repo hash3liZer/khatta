@@ -20,43 +20,43 @@ export const projects: Project[] = [
   //   link: 'https://haibian.seviche.cc'
   // },
   {
-    id: 'Raycast-miniflux',
-    name: 'Raycast - Miniflux',
-    tags: ['React', 'React Hooks', 'Miniflux', 'TypeScript'],
-    description: 'Search RSS entries from Raycast, and more features',
-    feature: 'React',
-    img: 'https://github.com/raycast/extensions/raw/3fdad375dd06b7f390b629235c6a10c37d05fc79/extensions/miniflux//media/commands.png',
-    link: 'https://www.raycast.com/SevicheCC/miniflux'
+    id: 'subrake',
+    name: 'Subrake - Subdomain Takeover Assessment Platform',
+    tags: ['subrake', 'infosec', 'bug-bounty', 'subdomain-takeover'],
+    description: 'Subrake is a powerful subdomain gathering and takeover assessment platform. It can help you identify vulnerable subdomains that can be taken over by a third party by automating whole process. ',
+    feature: 'Subdomain Takeover',
+    img: 'https://user-images.githubusercontent.com/29171692/206875533-0ac3ca1c-e183-4c4a-9bb2-b7206d1cfc50.png',
+    link: 'https://github.com/hash3liZer/subrake'
   },
-  {
-    id: 'Raycast-Akkoma',
-    name: 'Raycast - Akkoma',
-    tags: ['React', 'React Hooks', 'Akkoma', 'TypeScript'],
-    description: 'Publish status from Raycast to Akkoma or Pleroma, and view your bookmarked status',
-    feature: 'React',
-    img: 'https://github.com/raycast/extensions/raw/42e765bc6bf970054fd69abfdc6ab3dd2ea4942d/extensions/akkoma//media/command.png',
-    link: 'https://www.raycast.com/SevicheCC/akkoma'
-  },
-  {
-    id: 'miniflux-injector',
-    name: 'Miniflux-injector',
-    tags: ['Svelte', 'Browser Extension', 'Miniflux', 'RSS'],
-    description:
-      "Browser extension for the self-hosted miniflux bookmark service. Fork from <a href='https://github.com/Fivefold/linkding-injector' target='_blank'>linkding-injector</a>",
-    feature: 'Svelte',
-    img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/12/7ae29e6a539895491fbb88a28c95aed7.png',
-    link: 'https://github.com/Sevichecc/miniflux-injector'
-  },
-  {
-    id: 'fokify',
-    name: 'Fokify ',
-    tags: ['MVC', 'Vanilla JS', 'ES6', 'Parcel', 'SCSS', 'HTML5'],
-    feature: 'JavaScript',
-    description:
-      '一个基于Web端的菜谱搜索平台，有菜谱搜索、上传、收藏等功能，并使用 LocalStorage 来存储用户数据，让用户在退出页面后仍能浏览所收藏的菜谱。',
-    img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/06/c3f41e397af1e480f57dd75e82334819.png',
-    link: 'https://forkify.seviche.cc'
-  },
+  // {
+  //   id: 'Raycast-Akkoma',
+  //   name: 'Raycast - Akkoma',
+  //   tags: ['React', 'React Hooks', 'Akkoma', 'TypeScript'],
+  //   description: 'Publish status from Raycast to Akkoma or Pleroma, and view your bookmarked status',
+  //   feature: 'React',
+  //   img: 'https://github.com/raycast/extensions/raw/42e765bc6bf970054fd69abfdc6ab3dd2ea4942d/extensions/akkoma//media/command.png',
+  //   link: 'https://www.raycast.com/SevicheCC/akkoma'
+  // },
+  // {
+  //   id: 'miniflux-injector',
+  //   name: 'Miniflux-injector',
+  //   tags: ['Svelte', 'Browser Extension', 'Miniflux', 'RSS'],
+  //   description:
+  //     "Browser extension for the self-hosted miniflux bookmark service. Fork from <a href='https://github.com/Fivefold/linkding-injector' target='_blank'>linkding-injector</a>",
+  //   feature: 'Svelte',
+  //   img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/12/7ae29e6a539895491fbb88a28c95aed7.png',
+  //   link: 'https://github.com/Sevichecc/miniflux-injector'
+  // },
+  // {
+  //   id: 'fokify',
+  //   name: 'Fokify ',
+  //   tags: ['MVC', 'Vanilla JS', 'ES6', 'Parcel', 'SCSS', 'HTML5'],
+  //   feature: 'JavaScript',
+  //   description:
+  //     '一个基于Web端的菜谱搜索平台，有菜谱搜索、上传、收藏等功能，并使用 LocalStorage 来存储用户数据，让用户在退出页面后仍能浏览所收藏的菜谱。',
+  //   img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/06/c3f41e397af1e480f57dd75e82334819.png',
+  //   link: 'https://forkify.seviche.cc'
+  // },
   // {
   //   id: 'Coachlist',
   //   name: 'Find a Coach',
@@ -68,31 +68,31 @@ export const projects: Project[] = [
   //   link: 'https://coachlist.seviche.cc'
   // }
   // ,
-  {
-    id: 'bankist',
-    name: 'Bankist',
-    tags: ['Lazy-loading'],
-    feature: 'JavaScript',
-    description: '一个模拟的银行官网页面，用原生JS实现了懒加载、平滑滚动，以及幻灯片等组件',
-    img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/b5e1ff87c3b4ba4cf2f00d4124154472.png',
-    link: 'https://bankist.seviche.cc'
-  },
-  {
-    id: 'omnifood',
-    name: 'Omnifood',
-    tags: ['CSS5'],
-    feature: 'JavaScript',
-    description: '一个食品订阅APP官网，纯HTML + CSS + JavaScript实现',
-    img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/89424d0b448d105775c1d60346c57c59.png',
-    link: 'https://omnifood.seviche.cc'
-  },
-  {
-    id: 'piggame',
-    name: 'Pig Game',
-    tags: ['Game'],
-    feature: 'JavaScript',
-    description: '一个投骰子的游戏，先累计到20的人输。',
-    img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/154ae3bc957a478679f1d9b7e0e0dce1.png',
-    link: 'https://pig-game-101.netlify.app/'
-  }
+  // {
+  //   id: 'bankist',
+  //   name: 'Bankist',
+  //   tags: ['Lazy-loading'],
+  //   feature: 'JavaScript',
+  //   description: '一个模拟的银行官网页面，用原生JS实现了懒加载、平滑滚动，以及幻灯片等组件',
+  //   img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/b5e1ff87c3b4ba4cf2f00d4124154472.png',
+  //   link: 'https://bankist.seviche.cc'
+  // },
+  // {
+  //   id: 'omnifood',
+  //   name: 'Omnifood',
+  //   tags: ['CSS5'],
+  //   feature: 'JavaScript',
+  //   description: '一个食品订阅APP官网，纯HTML + CSS + JavaScript实现',
+  //   img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/89424d0b448d105775c1d60346c57c59.png',
+  //   link: 'https://omnifood.seviche.cc'
+  // },
+  // {
+  //   id: 'piggame',
+  //   name: 'Pig Game',
+  //   tags: ['Game'],
+  //   feature: 'JavaScript',
+  //   description: '一个投骰子的游戏，先累计到20的人输。',
+  //   img: 'https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/154ae3bc957a478679f1d9b7e0e0dce1.png',
+  //   link: 'https://pig-game-101.netlify.app/'
+  // }
 ]

@@ -11,7 +11,7 @@ export const site: SiteConfig = {
     name: '@hash3liZer',
     avatar: '/assets/avatar.png',
     status: '🖤',
-    bio: 'A Random Person (() => {})()',
+    bio: 'A Random Programmer (() => {})()',
     metadata: [
       {
         icon: 'i-mdi-github',

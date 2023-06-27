@@ -124,7 +124,7 @@ export const footer: FooterConfig = {
       link: '/atom.xml'
     },
     {
-      text: 'Pravicy',
+      text: 'Privacy',
       link: '/privacy'
     }
   ],
