@@ -1,9 +1,9 @@
 {
-  "name": "Seviche.cc",
-  "short_name": "Seviche.cc",
+  "name": "./khatta.sh",
+  "short_name": "./khatta.sh",
   "lang": "zh",
-  "description": "Random Frontend-Developer",
-  "id": "https://seviche.cc/",
+  "description": "Khatta is to provide in depth articles regarding tech, CTFs, challenges and much more. ",
+  "id": "https://blog.shameerkashif.me/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -12,25 +12,25 @@
   "theme_color": "#3D4451",
   "icons": [
     {
-      "src": "https://seviche.cc/assets/any@192.png",
+      "src": "https://blog.shameerkashif.me/assets/any@192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://seviche.cc/assets/any@512.png",
+      "src": "https://blog.shameerkashif.me/assets/any@512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://seviche.cc/assets/maskable@192.png",
+      "src": "https://blog.shameerkashif.me/assets/maskable@192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://seviche.cc/assets/maskable@512.png",
+      "src": "https://blog.shameerkashif.me/assets/maskable@512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
