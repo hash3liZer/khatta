@@ -101,6 +101,10 @@ export const header: HeaderConfig = {
       text: 'About',
       link: '/about'
     },
+    {
+      text: "Profile",
+      link: "https://shameerkashif.me"
+    }
     // {
     //   text: 'etc',
     //   children: [

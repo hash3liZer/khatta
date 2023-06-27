@@ -9,7 +9,7 @@ flags:
   import Profile from '$lib/components/extra/profile.svelte'
 </script>
 
-<Profile subname="sevichecc" bio={`A Passionate Programmer with the love of Cyber Security and Automation. I love to design and program things and then also discover flaws in them.`} >
+<Profile subname="Shameer Kashif" bio={`A Passionate Programmer with the love of Cyber Security and Automation. I love to design and program things and then also discover flaws in them.`} >
 
 <div class="flex flex-col md:flex-row gap-4 mt-4">
 <a href="https://shameerkashif.me" rel="noopener external" target="_blank" class="group flex-1 relative overflow-hidden btn btn-block normal-case border-none no-underline bg-[#110019] hover:bg-[#0077B3]">
@@ -22,11 +22,3 @@ flags:
 </a>
 </div>
 </Profile>
-
-### Skillset
-
-`JavaScript` `TypeScript` `Python` `DevSecOps` `Cloud` `Automation`
-
-### Frameworks
-
-`Shell Script` `Svelte` `Deno JS` `NodeJS` `Express.js` `Mongoose` `MongoDB` `Prisma`
