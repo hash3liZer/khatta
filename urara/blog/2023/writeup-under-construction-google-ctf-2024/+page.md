@@ -15,6 +15,7 @@ image: https://github.com/hash3liZer/khatta.sh/assets/29171692/f553635d-6deb-43e
 This writeup is for the under construction challenge from web category in Google CTF 2023. The challenge was provided with the following statement: _"We were building a web app but the new CEO wants it remade in php."_ The challenge contained 2 different web apps. One was in PHP that seems to be under development whilst flask app seemed like a full application. This writeup covers an `Parameter Pollution` vulnerability we were able to create an escalated user by supplying more than 1 parameter. 
 
 # Writeup
+## Getting Started
 So, at first i visited the URLS and got to know the application surface. Then i downloaded the challenge files available and opened them in the editor. 
 
 Reading the code, i got to the `flag` point. In the `index.php` file, we have: 
@@ -38,6 +39,7 @@ return $response;
 
 So, in order to get the flag, we need to create a gold tier user first. The PHP application itself doesn't offer any signup functionlaity but the `account_migrator.php` file does that is being called from the flask application. So, if we look at the flask application, we will find where the user is being registered. 
 
+## Vulnerable Part
 In the `authorized_routes.py`, we have: 
 ```python
 ...
@@ -75,7 +77,8 @@ curl http://vulnerablepart.com?tier=gold&tier=bold
 # you will get the second parameter aka bold
 ```
 
-So, in order to exploit this, we needed to create the user normally but with extra argument containing `gold` value. I simply signed up with the following request in Burp: 
+## Exploit
+In order to exploit this, we needed to create the user normally but with extra argument containing `gold` value. I simply signed up with the following request in Burp: 
 ```javascript
 POST /signup HTTP/2
 Host: under-construction-web.2023.ctfcompetition.com
