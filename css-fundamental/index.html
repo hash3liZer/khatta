@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="generator" content="gh:importantimport/urara" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" />
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta http-equiv="content-security-policy" content="style-src 'self' 'unsafe-inline' https://giscus.app">
+		<link href="../_app/immutable/assets/0.ec513b7b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.f5655687.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.54014205.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.9506628e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.d615244a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.08db6467.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.3f3eca81.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts.7eeb28a4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/posts.15a47f46.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/icon.ef698b28.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/title.9992e2d6.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.8891d144.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post_layout.fd56cf68.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post_card.53437310.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/footer.c33ffc90.js"><title>CSS · 基础笔记 | Seviche.cc</title><!-- HEAD_svelte-1592q3p_START --><link rel="me" href="https://kongwoo.icu/@seviche"><link rel="webmention" href="https://webmention.io/seviche.cc/webmention">
+    <link rel="pingback" href="https://webmention.io/seviche.cc/xmlrpc"><!-- HEAD_svelte-1592q3p_END --><!-- HEAD_svelte-1kxdj3d_START --><link rel="shortcut icon" href="https://seviche.cc/favicon.png" sizes="48x48" type="image/png"><link rel="apple-touch-icon" href="https://seviche.cc/assets/any@180.png" sizes="180x180" type="image/png"><link rel="icon" href="https://seviche.cc/assets/any@192.png" sizes="192x192" type="image/png"><!-- HEAD_svelte-1kxdj3d_END --><!-- HEAD_svelte-1g590ms_START --><meta name="theme-color"><!-- HEAD_svelte-1g590ms_END --><!-- HEAD_svelte-abrfj_START --><meta name="author" content="Seviche CC"><link rel="canonical" href="https://seviche.cc/css-fundamental">
+    
+    <meta name="keywords" content="CSS">
+    <!-- HTML_TAG_START --><link rel="authorization_endpoint" href="https://indieauth.com/auth"><!-- HTML_TAG_END --><!-- HTML_TAG_START --><link rel="token_endpoint" href="https://tokens.indieauth.com/token"><!-- HTML_TAG_END --><!-- HTML_TAG_START --><link rel="me" href="https://github.com/sevichecc" /><!-- HTML_TAG_END --><!-- HTML_TAG_START --><script data-cfasync="false"  defer data-do-not-track="true" data-website-id="2403ea30-74ff-4ffa-8264-556b9f3b2897" src="https://hexoverc.vercel.app/umami.js"></script><!-- HTML_TAG_END --><!-- HTML_TAG_START --><script async data-cfasync="false" src="https://cdn.splitbee.io/sb.js"></script><!-- HTML_TAG_END --><!-- HTML_TAG_START --><meta name="baiduspider" content="noindex,noarchive"><!-- HTML_TAG_END --><!-- HTML_TAG_START --><link rel="microsub" href="https://aperture.p3k.io/microsub/761"><!-- HTML_TAG_END --><!-- HEAD_svelte-abrfj_END --><!-- HEAD_svelte-1y1uq0g_START --><meta property="og:site_name" content="Seviche.cc"><meta property="og:locale" content="zh"><meta property="og:type" content="article">
+    <meta property="og:title" content="CSS · 基础笔记">
+    
+    <meta property="og:image" content="https://seviche.cc/assets/maskable@512.png">
+      <meta name="twitter:card" content="summary">
+    <meta property="article:tag" content="CSS">
+    <meta property="og:url" content="https://seviche.cc/css-fundamental">
+    <meta property="article:author" content="Seviche CC">
+    <meta property="article:published_time" content="2021-12-06T03:59:47.000Z">
+    <meta property="article:modified_time" content="2023-06-27T08:26:42.162Z"><!-- HEAD_svelte-1y1uq0g_END -->
+  </head>
+
+  <body itemscope itemtype="https://schema.org/WebPage">
+    
+
+
+
+
+
+
+
+
+
+
+<header id="header" class="fixed z-50 w-screen transition-all duration-500 ease-in-out border-b-2 border-transparent max-h-[4.125rem] false"><div class="navbar"><div class="navbar-start">
+
+<div class="dropdown lg:hidden"><label for="navbar-dropdown" tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-menu-alt-1"></span></label>
+  <ul id="navbar-dropdown" tabindex="0" class="menu menu-compact dropdown-content bg-base-100 text-base-content shadow-lg rounded-box min-w-max max-w-52 p-2"><li><a href="/projects">Projects</a>
+        </li><li><a href="/friends">Friends</a>
+        </li><li><a href="/about">About</a>
+        </li><li tabindex="0"><span class="justify-between gap-1 max-w-[13rem]">etc
+            <span class="i-heroicons-solid-chevron-right mr-2"></span></span>
+          <ul class="bg-base-100 text-base-content shadow-lg p-2"><li><a href="https://airtable.com/shrpftxf6JgRomP2X">Bookmarks</a>
+              </li><li><a href="https://x.seviche.cc">Daily Notes</a>
+              </li></ul>
+        </li></ul></div>
+<div class="swap order-last hidden lg:inline-grid"><button class="swap-on btn btn-ghost text-base font-normal normal-case transition-all duration-200 hidden"></button>
+  <ul class="swap-off menu menu-horizontal p-0"><li><a class="!rounded-btn" href="/projects">Projects</a>
+        </li><li><a class="!rounded-btn" href="/friends">Friends</a>
+        </li><li><a class="!rounded-btn" href="/about">About</a>
+        </li><li><span class="!rounded-btn gap-1">etc
+            <span class="i-heroicons-solid-chevron-down -mr-1"></span></span>
+          
+          <ul tabindex="0" class="menu rounded-box bg-base-100 text-base-content shadow-lg p-2"><li><a href="https://airtable.com/shrpftxf6JgRomP2X">Bookmarks</a>
+              </li><li><a href="https://x.seviche.cc">Daily Notes</a>
+              </li></ul>
+        </li></ul></div>
+        <a href="/" class="btn btn-ghost normal-case text-lg">Seviche.cc</a></div>
+      <div class="navbar-end"><button aria-label="search" tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-search"></span></button>
+        <div id="change-theme" class="dropdown dropdown-end">
+          
+          <div tabindex="0" class="btn btn-square btn-ghost"><span class="i-heroicons-outline-color-swatch"></span></div>
+          
+          
+          <ul tabindex="0" class="flex flex-nowrap shadow-2xl menu dropdown-content bg-base-100 text-base-content rounded-box w-52 p-2 gap-2 overflow-y-auto max-h-[21.5rem]"><button data-theme="lofi" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Light</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="dracula" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Dracula</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="coffee" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Coffee</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="cupcake" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Cupcake</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="valentine" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Valentine</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="aqua" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Aqua</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="synthwave" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Synthwave</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="night" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Night</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="garden" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Garden</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="lemonade" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Lemonade</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="cmyk" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">CMYK</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="retro" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Retro</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button><button data-theme="black" class="btn btn-ghost w-full hover:bg-primary group rounded-lg flex bg-base-100 p-2 transition-all"><p class="flex-1 text-left text-base-content group-hover:text-primary-content transition-color">Black</p>
+                <div class="flex-none m-auto flex gap-1"><div class="bg-primary w-2 h-4 rounded"></div>
+                  <div class="bg-secondary w-2 h-4 rounded"></div>
+                  <div class="bg-accent w-2 h-4 rounded"></div>
+                  <div class="bg-neutral w-2 h-4 rounded"></div></div>
+              </button></ul></div></div></div></header>
+
+<button id="totop" aria-label="scroll to top" class="fixed grid group btn btn-circle btn-lg border-none backdrop-blur bottom-6 right-6 z-50 duration-500 ease-in-out btn-ghost bg-base-100/30 md:bg-base-200/30 translate-y-24"><div class="radial-progress text-accent transition-all duration-500 ease-in-out group-hover:text-accent-focus col-start-1 row-start-1" style="--size:4rem; --thickness: 0.25rem; --value:undefined;"></div>
+  <div class="border-4 border-base-content/10 group-hover:border-transparent col-start-1 row-start-1 rounded-full w-full h-full p-4 grid duration-500 ease-in-out"><span class="i-heroicons-solid-chevron-up !w-6 !h-6"></span></div></button>
+
+<div class="bg-base-100 md:bg-base-200 min-h-screen pt-16 md:pb-8 lg:pb-16">
+
+
+
+<div class="flex flex-col flex-nowrap justify-center xl:flex-row xl:flex-wrap"><div class="flex-1 w-full order-first ease-out transform mx-auto xl:mr-0 xl:ml-0"></div>
+  <div class="flex-1 w-full xl:order-last ease-out transform mx-auto xl:ml-0 xl:mr-0"></div>
+  <div class="flex-none w-full max-w-screen-md mx-auto xl:mx-0"><article itemscope itemtype="https://schema.org/BlogPosting" itemprop="blogPost" class="h-entry card bg-base-100 rounded-none md:rounded-box md:shadow-lg md:shadow-grey-10 overflow-hidden z-10 md:mb-8 lg:mb-16"><div id="bridgy" class="hidden"><a href="https://brid.gy/publish/mastodon">mastodon</a></div>
+  
+  
+  <div class="card-body gap-0 "><div class="flex flex-col gap-2">
+      <div class="flex font-semibold gap-1.5"><a rel="author" class="opacity-75 hover:opacity-100 hover:text-primary duration-500 ease-in-out p-author h-card" href="https://seviche.cc">Seviche CC</a>
+  <span class="opacity-50">/</span>
+  <a href="/css-fundamental" class="u-url u-uid swap group/time"><time class="group-hover/time:opacity-0 font-semibold opacity-75 duration-500 ease-in-out mr-auto dt-published" datetime="2021-12-06T03:59:47.000Z" itemprop="datePublished">Mon, Dec 6, 2021</time>
+    <time class="opacity-0 group-hover/time:opacity-100 font-semibold text-primary duration-500 ease-in-out mr-auto dt-updated" datetime="2023-06-27T08:26:42.162Z" itemprop="dateModified">Tue, Jun 27, 2023</time></a></div>
+      <h1 itemprop="name headline" class="card-title text-2xl mb-8 p-name">CSS · 基础笔记</h1>
+      </div>
+    <main itemprop="articleBody" class="urara-prose prose e-content"><p>一些随堂笔记。</p>
+<p>课程：<a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/" rel="nofollow noopener noreferrer external" target="_blank">Build Responsive Real-World Websites with HTML and CSS</a></p>
+<h2 id="css-是什么"><a href="#css-是什么">css 是什么</a></h2>
+<ul><li><strong>C</strong>ascading<strong>S</strong>tyle<strong>S</strong>heets (层叠式样式表）</li>
+<li>CSS describes the <strong>visual style and presentation</strong> of the <strong>content written in HTML</strong></li>
+<li>CSS consists of countless <strong>properties</strong> that developers use to format the content: properties about font, text, spacing, layout, etc.</li></ul>
+<h2 id="分类"><a href="#分类">分类</a></h2>
+<h3 id="inline-css"><a href="#inline-css">inline CSS</a></h3>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">p</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">style</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">color:blue</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">&gt;</span><span style="color: #EEFFFF">text</span><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<blockquote><p>最好不用</p></blockquote>
+<h3 id="internal-css"><a href="#internal-css">internal CSS</a></h3>
+<p>放在<code>&lt;head&gt;</code>里面的<code>&lt;style&gt;</code>，如：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #89DDFF">  &lt;</span><span style="color: #F07178">style</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #EEFFFF">    </span><span style="color: #FFCB6B">h1</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">      </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> blue</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">    </span><span style="color: #89DDFF">&#125;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">style</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>代码很长的时候，整理很麻烦</li></ul>
+<h3 id="external-css"><a href="#external-css">external CSS</a></h3>
+<ul><li>引用单独的 css 文件，如 <code>style.css</code></li>
+<li>放在<code>&lt;head&gt;</code>里用<code>&lt;link&gt;</code>引用，如：</li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">link</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">href</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">style.css</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">ref</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">stylesheet</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF"> /&gt;</span></div><div class='line'><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>关于<code>&lt;link&gt;</code> ，可参考:<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link#attr-rel" rel="nofollow noopener noreferrer external" target="_blank">MDN</a></p>
+<h2 id="组成"><a href="#组成">组成</a></h2>
+<p><img src="https://s2.loli.net/2022/01/06/Wvj8SKIwGrVaicJ.png" alt="https://s2.loli.net/2022/01/06/Wvj8SKIwGrVaicJ.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h2 id="selectors"><a href="#selectors">Selectors</a></h2>
+<h3 id="descendent-selector"><a href="#descendent-selector">descendent selector</a></h3>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">footer</span><span style="color: #EEFFFF"> </span><span style="color: #FFCB6B">p</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-family</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> sans</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div><div class='line'></div><div class='line'><span style="color: #FFCB6B">article</span><span style="color: #EEFFFF"> </span><span style="color: #FFCB6B">header</span><span style="color: #EEFFFF"> </span><span style="color: #FFCB6B">p</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> blue</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="line-selector"><a href="#line-selector">line selector</a></h3>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">h1</span><span style="color: #89DDFF">,</span></div><div class='line'><span style="color: #FFCB6B">h2</span><span style="color: #89DDFF">,</span></div><div class='line'><span style="color: #FFCB6B">h3</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> blue</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>定义特定元素样式的两种方式：CSS ID、class attributes</p>
+<h2 id="id"><a href="#id">id</a></h2>
+<blockquote><p>给每个元素一个 id，仅能用一次，尽量不要用</p></blockquote>
+<p>在 HTML 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">p</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">id</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">author</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">&gt;</span><span style="color: #EEFFFF">text</span><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>在 CSS 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">#</span><span style="color: #F78C6C">author</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-family</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> sans</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="class-attributes"><a href="#class-attributes">class attributes</a></h3>
+<blockquote><p>能无限复用</p></blockquote>
+<p>在 HTML 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">p</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">class</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">author</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">&gt;</span><span style="color: #EEFFFF">text</span><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>在 CSS 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">.</span><span style="color: #FFCB6B">author</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-family</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> sans</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<blockquote><p>能无限复用</p></blockquote>
+<p>在 HTML 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">p</span><span style="color: #89DDFF"> </span><span style="color: #C792EA">class</span><span style="color: #89DDFF">=</span><span style="color: #89DDFF">"</span><span style="color: #C3E88D">author</span><span style="color: #89DDFF">"</span><span style="color: #89DDFF">&gt;</span><span style="color: #EEFFFF">text</span><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>在 CSS 中：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">.</span><span style="color: #FFCB6B">author</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-family</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> sans</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="universal-selector"><a href="#universal-selector">universal selector</a></h3>
+<ul><li>对所有元素生效</li>
+<li>优先级最低</li>
+<li>不可继承</li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">*</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">#</span><span style="color: #EEFFFF">1098ab</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="body"><a href="#body">body</a></h3>
+<ul><li>在<code>&lt;body&gt;</code> 里的通常只应用于文本元素（text）</li>
+<li>Not all properties get inherited. It’s mostly ones <strong>related to text</strong>: <code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>font-style</code>, <code>color</code>, <code>line-height</code>, <code>letter-spacing</code>, <code>text-align</code>, <code>text-transform</code>, <code>text-shadow</code>, <code>list-style</code>, etc.</li>
+<li>可继承</li></ul>
+<h3 id="优先级"><a href="#优先级">优先级</a></h3>
+<h4 id="conflicting-between-selectors"><a href="#conflicting-between-selectors">conflicting between selectors</a></h4>
+<p><img src="https://s2.loli.net/2022/01/07/Zl3GX9dhrO2nqMs.png" alt="https://s2.loli.net/2022/01/07/Zl3GX9dhrO2nqMs.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<ul><li>尽量不要用<code>!important</code></li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #EEFFFF">foot </span><span style="color: #FFCB6B">p</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> green </span><span style="color: #F78C6C">!important</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<ul><li>所有 selector 都会被应用，只有冲突的按优先级应用</li>
+<li>当使用相同类别的 selector 时，应用最后一个</li></ul>
+<h4 id="inheritance"><a href="#inheritance">inheritance</a></h4>
+<ul><li>inheriting elements can easily be override</li>
+<li>优先级最低</li>
+<li>body 可继承，universal selector 不可以</li></ul>
+<h2 id="颜色"><a href="#颜色">颜色</a></h2>
+<h3 id="rgbrgba"><a href="#rgbrgba">RGB/RGBA</a></h3>
+<ul><li>基本<code>(r,g,b,alpha)</code></li>
+<li>白色<code>(255,255,255)</code></li>
+<li>黑色<code>(0,0,0)</code></li></ul>
+<h2 id="hexadecimal-colors"><a href="#hexadecimal-colors">Hexadecimal Colors</a></h2>
+<ul><li>0 to ff (255 in hexadecimal numbers):
+<code>#00ffff</code></li>
+<li>Shorthand, when all colors are identical pairs
+<code>#off</code>
+当需要透明度的时候才用 rgb 颜色，一般用 hex</li></ul>
+<h2 id="pseudo-class"><a href="#pseudo-class">Pseudo Class</a></h2>
+<blockquote><p>用来指定特定元素</p></blockquote>
+<h3 id="第一个元素最后一个元素"><a href="#第一个元素最后一个元素">第一个元素/最后一个元素</a></h3>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">li</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">first-child</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-weight</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> bold</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div><div class='line'></div><div class='line'><span style="color: #FFCB6B">li</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">last-child</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> italic</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="奇数偶数-特定次序"><a href="#奇数偶数-特定次序">奇数/偶数 /特定次序</a></h3>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">li</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">nth-child</span><span style="color: #89DDFF">(</span><span style="color: #EEFFFF">odd</span><span style="color: #89DDFF">)</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> italic</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div><div class='line'></div><div class='line'><span style="color: #FFCB6B">li</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">nth-child</span><span style="color: #89DDFF">(</span><span style="color: #EEFFFF">even</span><span style="color: #89DDFF">)</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> italic</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div><div class='line'></div><div class='line'><span style="color: #FFCB6B">li</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">nth-child</span><span style="color: #89DDFF">(</span><span style="color: #F78C6C">3</span><span style="color: #89DDFF">)</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> italic</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="多种元素时"><a href="#多种元素时">多种元素时</a></h3>
+<p>如下所示，当 HTML 中<code>&lt;p&gt;</code>并不是<code>&lt;article&gt;</code>里面的第一个元素时，不生效。</p>
+<p>即当母元素(parent element)里有多种元素时(child elements)，不宜使用伪类(pseudo class)，可以在列中使用，如<code>&lt;li&gt;</code></p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" html="true"><div class="language-id">html</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">article</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;&lt;/</span><span style="color: #F07178">head</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #89DDFF">&lt;</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;&lt;/</span><span style="color: #F07178">p</span><span style="color: #89DDFF">&gt;</span></div><div class='line'><span style="color: #89DDFF">&lt;/</span><span style="color: #F07178">article</span><span style="color: #89DDFF">&gt;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">article</span><span style="color: #EEFFFF"> </span><span style="color: #FFCB6B">p</span><span style="color: #EEFFFF">:</span><span style="color: #FFCB6B">fist-child</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-family</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> sans</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="style-hyperlinks"><a href="#style-hyperlinks">Style hyperlinks</a></h3>
+<p>四个状态都应定义，并按顺序排列</p>
+<h4 id="link"><a href="#link">link</a></h4>
+<p>不进行交互的预览下</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">a</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">link</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">#</span><span style="color: #EEFFFF">1098ad</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h4 id="visited"><a href="#visited">visited</a></h4>
+<p>点击后</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">a</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">visited</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">#</span><span style="color: #EEFFFF">777</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h4 id="hover"><a href="#hover">hover</a></h4>
+<p>悬停时</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">a</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">hover</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> orangered</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-weight</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> bold</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">text-decoration</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> underline dotted orangered</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h4 id="active"><a href="#active">active</a></h4>
+<p>点击时(通常和 hover 同时出现</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">a</span><span style="color: #89DDFF">:</span><span style="color: #C792EA">active</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">background-color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> black</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> italic</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h2 id="pseudo-elements"><a href="#pseudo-elements">Pseudo Elements</a></h2>
+<blockquote><p>any pseudo elements is actually an inline element</p></blockquote>
+<p>在 HTML 中并不真实存在，但仍可在 CSS 中选择，如行内第一个字符：
+在 HTML 中并不真实存在，但仍可在 CSS 中选择，如行内第一个字符：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">h1</span><span style="color: #89DDFF">::</span><span style="color: #C792EA">first-letter</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-style</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> normal</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>段内第一行：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">p</span><span style="color: #89DDFF">::</span><span style="color: #C792EA">first-line</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> red</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="adjacent-sibiling-selector"><a href="#adjacent-sibiling-selector">adjacent sibiling selector</a></h3>
+<p>在同一 parent element 里，下面最临近的元素</p>
+<p>如 h3 标题下的 p：</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">h3</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">+</span><span style="color: #EEFFFF"> </span><span style="color: #FFCB6B">p</span><span style="color: #89DDFF">::</span><span style="color: #C792EA">first-line</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> red</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="after"><a href="#after">after</a></h3>
+<ul><li>就算没有文字内容，也要定义<code>content</code></li>
+<li>位于行末</li></ul>
+<p><img src="https://s2.loli.net/2022/01/08/YZaXGonBRELSuvH.png" alt="https://s2.loli.net/2022/01/08/YZaXGonBRELSuvH.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">h2</span><span style="color: #89DDFF">::</span><span style="color: #C792EA">after</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">content</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">'</span><span style="color: #C3E88D">TOP</span><span style="color: #89DDFF">'</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-size</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">16px</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">font-weight</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> bold</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> black</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">padding</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">5px</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">15px</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">display</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> inline-block</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">position</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> absolute</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">top</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">-10px</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">right</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">-25px</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">background-color</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">#</span><span style="color: #EEFFFF">ffe70e</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div><div class='line'></div><div class='line'><span style="color: #FFCB6B">h2</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">position</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> relative</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h3 id="before"><a href="#before">before</a></h3>
+<ul><li>位于行前</li></ul>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">h2</span><span style="color: #89DDFF">::</span><span style="color: #C792EA">before</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h2 id="box-model"><a href="#box-model">Box Model</a></h2>
+<p><img src="https://s2.loli.net/2022/01/07/hM1AKQwbp5u8gSJ.png" alt="https://s2.loli.net/2022/01/07/hM1AKQwbp5u8gSJ.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<p><img src="https://s2.loli.net/2022/01/07/V9SoD43kBH1z5cp.png" alt="https://s2.loli.net/2022/01/07/V9SoD43kBH1z5cp.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<p><img src="https://s2.loli.net/2022/01/07/pUJWb7iMqgI213G.png" alt="https://s2.loli.net/2022/01/07/pUJWb7iMqgI213G.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h3 id="type-of-boxes"><a href="#type-of-boxes">Type of boxes:</a></h3>
+<h4 id="inline-boxes"><a href="#inline-boxes">inline boxes</a></h4>
+<p><img src="https://s2.loli.net/2022/01/08/HhPGpo83LnKMQCJ.png" alt="https://s2.loli.net/2022/01/08/HhPGpo83LnKMQCJ.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h4 id="block-level-boxes"><a href="#block-level-boxes">block-level boxes</a></h4>
+<p><img src="https://s2.loli.net/2022/01/08/kK4HD6YVsFIqx31.png" alt="https://s2.loli.net/2022/01/08/kK4HD6YVsFIqx31.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h4 id="inline-block-boxes"><a href="#inline-block-boxes">inline-block boxes</a></h4>
+<p><img src="https://s2.loli.net/2022/01/08/1Jxe5aOTtPwGFoc.png" alt="img其实是inline-block box " class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<p>img 其实是 inline-block box</p>
+<h3 id="padding"><a href="#padding">padding</a></h3>
+<p>内边距</p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #EEFFFF">padding: 上下 左右;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h4 id="reset-margin-ane-padding"><a href="#reset-margin-ane-padding">reset margin ane padding</a></h4>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #FFCB6B">*</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">margin</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">0</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">padding</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">0</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<p>不要用 body</p>
+<h3 id="margin"><a href="#margin">margin</a></h3>
+<p>外边距</p>
+<h4 id="collapsing-margins"><a href="#collapsing-margins">collapsing margins</a></h4>
+<ul><li>当两元素的 margin 重合时，大的会覆盖小的</li></ul>
+<h3 id="dimensions"><a href="#dimensions">Dimensions</a></h3>
+<h4 id="width"><a href="#width">width</a></h4>
+<ul><li>percentage: percentage of the width of the parents containers</li></ul>
+<h2 id="position"><a href="#position">position</a></h2>
+<p><img src="https://s2.loli.net/2022/01/08/u9G7IJyYWzbdRF4.png" alt="https://s2.loli.net/2022/01/08/u9G7IJyYWzbdRF4.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h3 id="normal-flow"><a href="#normal-flow">Normal Flow</a></h3>
+<ul><li>默认状态</li></ul>
+<h3 id="absolute-position"><a href="#absolute-position">Absolute Position</a></h3>
+<ul><li>绝对位置</li>
+<li>常用于一些小元素</li>
+<li>parent elements/containers should set to <code>relative</code></li>
+<li>取决于最近层次的 relative parent elements/containers</li></ul>
+<p><img src="https://s2.loli.net/2022/01/08/NIga4hbQOHVfFCr.png" alt="https://s2.loli.net/2022/01/08/NIga4hbQOHVfFCr.png" class="rounded-lg my-2" loading="lazy" decoding="async"></p>
+<h3 id="centering-page"><a href="#centering-page">centering page</a></h3>
+<p>use the <code>&lt;div&gt;</code> element to create a container class, then set the <code>margin-left</code> and <code>margin-right</code> to <code>auto</code></p>
+<!-- HTML_TAG_START --><pre class="shiki material-default" style="background-color: #263238; color: #EEFFFF" css="true"><div class="language-id">css</div><div class='code-container'><code><div class='line'><span style="color: #89DDFF">.</span><span style="color: #FFCB6B">container</span><span style="color: #EEFFFF"> </span><span style="color: #89DDFF">&#123;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">width</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">800px</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #EEFFFF">  </span><span style="color: #B2CCD6">margin</span><span style="color: #89DDFF">:</span><span style="color: #EEFFFF"> </span><span style="color: #F78C6C">0</span><span style="color: #EEFFFF"> auto</span><span style="color: #89DDFF">;</span></div><div class='line'><span style="color: #89DDFF">&#125;</span></div></code></div></pre><!-- HTML_TAG_END -->
+<h2 id="基本操作"><a href="#基本操作">基本操作</a></h2>
+<h3 id="css-注释"><a href="#css-注释">CSS 注释</a></h3>
+<ul><li><code>/*需要注释的内容*/</code></li>
+<li>VS code 快捷键 :<code>CMD+/</code> (mac) <code>Control+/</code> (win)</li>
+<li>调出开发者工具<code>cmd+i</code></li></ul>
+<h3 id="fix-bugs"><a href="#fix-bugs">Fix bugs</a></h3>
+<ul><li><p>方法：</p>
+<ul><li><strong>inspect</strong></li>
+<li>检查刚开始变得不一样的地方</li>
+<li>如果有很多 selector，复杂的那个会被首先应用</li>
+<li>检查 css 文件引用链接是否正确</li></ul></li>
+<li><p>工具：
+HTML 校对器:
+<a href="https://validator.w3.org/" rel="nofollow noopener noreferrer external" target="_blank">Markup Validation Service</a></p>
+<p>代码比对:
+<a href="https://www.diffchecker.com/" rel="nofollow noopener noreferrer external" target="_blank">Diffchecker</a></p></li></ul></main>
+    <div class="divider mt-4 mb-0"></div>
+      <div><a href="/?tags=CSS" class="btn btn-sm btn-ghost normal-case mt-2 mr-2 p-category">#CSS
+          </a></div></div>
+  
+    </article>
+    <footer id="footer" class="footer footer-center bg-base-300 text-base-content shadow-inner p-8 md:rounded-box sticky bottom-0 z-0 md:static "><div class="prose"><p><a href="/atom.xml" rel="noopener noreferrer external" target="_blank">Feed</a>
+          <span class="mr-1">·</span><a href="/privacy" rel="noopener noreferrer external" target="_blank">Pravicy</a>
+          
+        <br>
+      Copyright © 2021 - 2023
+      Seviche CC
+      <br>
+      Powered by
+      <a rel="noopener noreferrer external" target="_blank" class="tooltip tooltip-secondary hover:text-secondary" data-tip="🌸 [δ] - Based on MDsveX & SvelteKit 🌸" href="https://github.com/importantimport/urara">Urara
+      </a>
+      <br>
+        <!-- HTML_TAG_START --><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><!-- HTML_TAG_END --></p></div></footer></div></div></div>
+
+
+			<script type="application/json" data-sveltekit-fetched data-url="/posts.json">{"status":200,"statusText":"","headers":{},"body":"[{\"title\":\"Privacy Policy 隐私声明\",\"created\":\"2022-06-19T00:00:00.000Z\",\"flags\":[\"unlisted\"],\"updated\":\"2023-06-27T08:26:42.162Z\",\"slug\":\"/privacy/+page.svelte.md\",\"path\":\"/privacy\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"About\",\"created\":\"2022-05-06T00:00:00.000Z\",\"flags\":[\"unlisted\"],\"updated\":\"2023-06-27T08:26:42.142Z\",\"slug\":\"/about/+page.svelte.md\",\"path\":\"/about\",\"toc\":[{\"depth\":2,\"title\":\"接触过的技术\",\"slug\":\"接触过的技术\"},{\"depth\":3,\"title\":\"姑且熟悉\",\"slug\":\"姑且熟悉\"},{\"depth\":3,\"title\":\"简单用过\",\"slug\":\"简单用过\"},{\"depth\":3,\"title\":\"了解\",\"slug\":\"了解\"},{\"depth\":2,\"title\":\"最近\",\"slug\":\"最近\"},{\"depth\":3,\"title\":\"在做\",\"slug\":\"在做\"},{\"depth\":3,\"title\":\"完成\",\"slug\":\"完成\"},{\"depth\":3,\"title\":\"联系我\",\"slug\":\"联系我\"},{\"depth\":3,\"title\":\"写码进度\",\"slug\":\"写码进度\"},{\"depth\":3,\"title\":\"博客日志\",\"slug\":\"博客日志\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"自建网页书签Flare\",\"created\":\"2022-02-20T14:04:17.000Z\",\"tags\":[\"Docker\",\"Self-hosted\"],\"slug\":\"/flare/+page.md\",\"summary\":\"通过Docker自建网页书签Flare\",\"lastmod\":\"2022-03-30T02:19:33.711Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/flare\",\"toc\":[{\"depth\":3,\"title\":\"1.创建 Flare 文件夹\",\"slug\":\"1创建-flare-文件夹\"},{\"depth\":3,\"title\":\"2.下载包含示例的代码\",\"slug\":\"2下载包含示例的代码\"},{\"depth\":3,\"title\":\"3.运行容器\",\"slug\":\"3运行容器\"},{\"depth\":4,\"title\":\"方法 1：直接启动\",\"slug\":\"方法-1直接启动\"},{\"depth\":4,\"title\":\"方法 2：通过 docker composer\",\"slug\":\"方法-2通过-docker-composer\"},{\"depth\":3,\"title\":\"4.修改书签内容\",\"slug\":\"4修改书签内容\"},{\"depth\":3,\"title\":\"5.用 nginx 反代和设置域名\",\"slug\":\"5用-nginx-反代和设置域名\"},{\"depth\":3,\"title\":\"6.SSL 证书和其他书签\",\"slug\":\"6ssl-证书和其他书签\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"用 docker 安装 Halo 博客\",\"created\":\"2022-02-16T14:04:17.000Z\",\"tags\":[\"Docker\",\"Self-host\"],\"slug\":\"/halo/+page.md\",\"summary\":\"\",\"lastmod\":\"2022-05-07T05:39:19.169Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/halo\",\"toc\":[{\"depth\":2,\"title\":\"准备\",\"slug\":\"准备\"},{\"depth\":3,\"title\":\"解析域名\",\"slug\":\"解析域名\"},{\"depth\":3,\"title\":\"安装 docker\",\"slug\":\"安装-docker\"},{\"depth\":3,\"title\":\"检查端口开放情况\",\"slug\":\"检查端口开放情况\"},{\"depth\":2,\"title\":\"安装 Halo\",\"slug\":\"安装-halo\"},{\"depth\":3,\"title\":\"1.创建工作目录\",\"slug\":\"1创建工作目录\"},{\"depth\":3,\"title\":\"2.下载示例配置文件到工作目录\",\"slug\":\"2下载示例配置文件到工作目录\"},{\"depth\":3,\"title\":\"3. 编辑配置文件，配置数据库或者端口\",\"slug\":\"3-编辑配置文件配置数据库或者端口\"},{\"depth\":4,\"title\":\"打开配置文件 application.yaml\",\"slug\":\"打开配置文件-applicationyaml\"},{\"depth\":4,\"title\":\"修改配置\",\"slug\":\"修改配置\"},{\"depth\":3,\"title\":\"4. 拉取最新的 Halo 镜像\",\"slug\":\"4-拉取最新的-halo-镜像\"},{\"depth\":3,\"title\":\"5. 创建容器\",\"slug\":\"5-创建容器\"},{\"depth\":3,\"title\":\"6. 打开安装引导界面。\",\"slug\":\"6-打开安装引导界面\"},{\"depth\":2,\"title\":\"用 Nginx 反代\",\"slug\":\"用-nginx-反代\"},{\"depth\":3,\"title\":\"1.安装 Nginx\",\"slug\":\"1安装-nginx\"},{\"depth\":3,\"title\":\"2.配置 halo.conf\",\"slug\":\"2配置-haloconf\"},{\"depth\":3,\"title\":\"3.重启 nginx\",\"slug\":\"3重启-nginx\"},{\"depth\":2,\"title\":\"安装 certbot，为域名获取免费 SSL 证书\",\"slug\":\"安装-certbot为域名获取免费-ssl-证书\"},{\"depth\":3,\"title\":\"1.安装 certbot\",\"slug\":\"1安装-certbot\"},{\"depth\":3,\"title\":\"2.配置证书\",\"slug\":\"2配置证书\"},{\"depth\":2,\"title\":\"其他\",\"slug\":\"其他\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"VS Code 技巧合集\",\"tags\":[\"实用技巧\"],\"categories\":[\"实用技巧\"],\"slug\":\"/vscode/+page.md\",\"summary\":\"字体/插件/设置……\",\"created\":\"2022-01-27T13:40:28.920Z\",\"lastmod\":\"2022-03-30T02:20:34.584Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/vscode\",\"toc\":[{\"depth\":2,\"title\":\"关闭 VS Code 中的 popup 面板\",\"slug\":\"关闭-vs-code-中的-popup-面板\"},{\"depth\":2,\"title\":\"修改字体\",\"slug\":\"修改字体\"},{\"depth\":2,\"title\":\"快捷键\",\"slug\":\"快捷键\"},{\"depth\":2,\"title\":\"插件\",\"slug\":\"插件\"},{\"depth\":2,\"title\":\"设置\",\"slug\":\"设置\"},{\"depth\":2,\"title\":\"其他\",\"slug\":\"其他\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"两种免费发布Axure原型的方式\",\"created\":\"2022-01-21T00:11:17.000Z\",\"tags\":[\"实用技巧\"],\"slug\":\"/axure/+page.md\",\"summary\":\"通过Netlify和Vercel发布\",\"lastmod\":\"2022-04-07T07:24:20.692Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/axure\",\"toc\":[{\"depth\":2,\"title\":\"Netlify\",\"slug\":\"netlify\"},{\"depth\":2,\"title\":\"Vercel +Github\",\"slug\":\"vercel-github\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · Argon主题的CSS修改\",\"created\":\"2022-01-16T14:04:17.000Z\",\"tags\":[\"CSS\"],\"slug\":\"/argon/+page.md\",\"summary\":\"基于最近所学，对当前Argon主题做了一些微小的调整\",\"lastmod\":\"2022-05-07T05:30:35.639Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.142Z\",\"path\":\"/argon\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · hover时图片放大的动效\",\"created\":\"2022-01-13T16:03:47.000Z\",\"slug\":\"/hover/+page.md\",\"tags\":[\"CSS Trick\",\"CSS\"],\"summary\":\"通过transform设置\",\"lastmod\":\"2022-05-07T05:30:52.029Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/hover\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · 三种布局方式\",\"slug\":\"/css-layout/+page.md\",\"tags\":[\"CSS\"],\"created\":\"2022-01-13T10:07:00.000Z\",\"summary\":\"Float / Flexbox / Grid /\",\"lastmod\":\"2022-05-07T05:30:20.613Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/css-layout\",\"toc\":[{\"depth\":2,\"title\":\"Overview\",\"slug\":\"overview\"},{\"depth\":2,\"title\":\"Box-sizing\",\"slug\":\"box-sizing\"},{\"depth\":3,\"title\":\"reset\",\"slug\":\"reset\"},{\"depth\":2,\"title\":\"Float Layout\",\"slug\":\"float-layout\"},{\"depth\":3,\"title\":\"left\",\"slug\":\"left\"},{\"depth\":3,\"title\":\"right\",\"slug\":\"right\"},{\"depth\":3,\"title\":\"ABSOLUTE POSITIONING VS. FLOATS\",\"slug\":\"absolute-positioning-vs-floats\"},{\"depth\":3,\"title\":\"Clear Float\",\"slug\":\"clear-float\"},{\"depth\":4,\"title\":\"方法 1: empty div\",\"slug\":\"方法-1-empty-div\"},{\"depth\":4,\"title\":\"方法 2:clearfix hack\",\"slug\":\"方法-2clearfix-hack\"},{\"depth\":2,\"title\":\"Flexbox\",\"slug\":\"flexbox\"},{\"depth\":3,\"title\":\"Flex container\",\"slug\":\"flex-container\"},{\"depth\":3,\"title\":\"Flex items\",\"slug\":\"flex-items\"},{\"depth\":3,\"title\":\"Propetities\",\"slug\":\"propetities\"},{\"depth\":4,\"title\":\"order\",\"slug\":\"order\"},{\"depth\":4,\"title\":\"flex-grow\",\"slug\":\"flex-grow\"},{\"depth\":4,\"title\":\"flex-basis\",\"slug\":\"flex-basis\"},{\"depth\":4,\"title\":\"shorthand\",\"slug\":\"shorthand\"},{\"depth\":2,\"title\":\"CSS Grid\",\"slug\":\"css-grid\"},{\"depth\":3,\"title\":\"grid container\",\"slug\":\"grid-container\"},{\"depth\":4,\"title\":\"Gap\",\"slug\":\"gap\"},{\"depth\":4,\"title\":\"align tracks inside containers\",\"slug\":\"align-tracks-inside-containers\"},{\"depth\":3,\"title\":\"grid items\",\"slug\":\"grid-items\"},{\"depth\":4,\"title\":\"align items inside cells\",\"slug\":\"align-items-inside-cells\"},{\"depth\":3,\"title\":\"fr\",\"slug\":\"fr\"},{\"depth\":3,\"title\":\"implicit row\",\"slug\":\"implicit-row\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · Add margin to buttons\",\"slug\":\"/margin/+page.md\",\"tags\":[\"CSS Trick\",\"CSS\"],\"created\":\"2022-01-13T10:04:21.000Z\",\"summary\":\"用helper class为单个按钮加margin，防止元素复用时产生不必要的margin\",\"lastmod\":\"2022-05-07T05:32:49.156Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/margin\",\"toc\":[{\"depth\":2,\"title\":\"HTML\",\"slug\":\"html\"},{\"depth\":2,\"title\":\"CSS\",\"slug\":\"css\"},{\"depth\":2,\"title\":\"为按钮增加内边距\",\"slug\":\"为按钮增加内边距\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · Reusable Grid\",\"slug\":\"/grid/+page.md\",\"tags\":[\"CSS\"],\"created\":\"2022-01-13T10:01:44.000Z\",\"summary\":\"可复用的CSS Grid设置\",\"lastmod\":\"2022-05-07T05:32:52.372Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/grid\",\"toc\":[{\"depth\":4,\"title\":\"CSS:\",\"slug\":\"css\"},{\"depth\":4,\"title\":\"HTML:\",\"slug\":\"html\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · Rem in CSS\",\"slug\":\"/rem-css/+page.md\",\"tags\":[\"CSS\"],\"created\":\"2022-01-12T09:50:27.000Z\",\"summary\":\"CSS中的Rem是什么\",\"lastmod\":\"2022-05-07T05:32:42.708Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/rem-css\",\"toc\":[{\"depth\":2,\"title\":\"1. set px\",\"slug\":\"1-set-px\"},{\"depth\":2,\"title\":\"2. percentage\",\"slug\":\"2-percentage\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"翻译 · Material Design3\",\"created\":\"2022-01-03T13:02:17.000Z\",\"tags\":[\"翻译\"],\"categories\":[\"翻译\"],\"slug\":\"/material/+page.md\",\"summary\":\"部分翻译内容\",\"lastmod\":\"2022-05-07T05:30:39.510Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/material\",\"toc\":false,\"type\":\"article\",\"html\":\"\"},{\"title\":\"CSS · 基础笔记\",\"created\":\"2021-12-06T03:59:47.000Z\",\"slug\":\"/css-fundamental/+page.md\",\"tags\":[\"CSS\"],\"lastmod\":\"2022-05-07T05:30:27.910Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/css-fundamental\",\"toc\":[{\"depth\":2,\"title\":\"css 是什么\",\"slug\":\"css-是什么\"},{\"depth\":2,\"title\":\"分类\",\"slug\":\"分类\"},{\"depth\":3,\"title\":\"inline CSS\",\"slug\":\"inline-css\"},{\"depth\":3,\"title\":\"internal CSS\",\"slug\":\"internal-css\"},{\"depth\":3,\"title\":\"external CSS\",\"slug\":\"external-css\"},{\"depth\":2,\"title\":\"组成\",\"slug\":\"组成\"},{\"depth\":2,\"title\":\"Selectors\",\"slug\":\"selectors\"},{\"depth\":3,\"title\":\"descendent selector\",\"slug\":\"descendent-selector\"},{\"depth\":3,\"title\":\"line selector\",\"slug\":\"line-selector\"},{\"depth\":2,\"title\":\"id\",\"slug\":\"id\"},{\"depth\":3,\"title\":\"class attributes\",\"slug\":\"class-attributes\"},{\"depth\":3,\"title\":\"universal selector\",\"slug\":\"universal-selector\"},{\"depth\":3,\"title\":\"body\",\"slug\":\"body\"},{\"depth\":3,\"title\":\"优先级\",\"slug\":\"优先级\"},{\"depth\":4,\"title\":\"conflicting between selectors\",\"slug\":\"conflicting-between-selectors\"},{\"depth\":4,\"title\":\"inheritance\",\"slug\":\"inheritance\"},{\"depth\":2,\"title\":\"颜色\",\"slug\":\"颜色\"},{\"depth\":3,\"title\":\"RGB/RGBA\",\"slug\":\"rgbrgba\"},{\"depth\":2,\"title\":\"Hexadecimal Colors\",\"slug\":\"hexadecimal-colors\"},{\"depth\":2,\"title\":\"Pseudo Class\",\"slug\":\"pseudo-class\"},{\"depth\":3,\"title\":\"第一个元素/最后一个元素\",\"slug\":\"第一个元素最后一个元素\"},{\"depth\":3,\"title\":\"奇数/偶数 /特定次序\",\"slug\":\"奇数偶数-特定次序\"},{\"depth\":3,\"title\":\"多种元素时\",\"slug\":\"多种元素时\"},{\"depth\":3,\"title\":\"Style hyperlinks\",\"slug\":\"style-hyperlinks\"},{\"depth\":4,\"title\":\"link\",\"slug\":\"link\"},{\"depth\":4,\"title\":\"visited\",\"slug\":\"visited\"},{\"depth\":4,\"title\":\"hover\",\"slug\":\"hover\"},{\"depth\":4,\"title\":\"active\",\"slug\":\"active\"},{\"depth\":2,\"title\":\"Pseudo Elements\",\"slug\":\"pseudo-elements\"},{\"depth\":3,\"title\":\"adjacent sibiling selector\",\"slug\":\"adjacent-sibiling-selector\"},{\"depth\":3,\"title\":\"after\",\"slug\":\"after\"},{\"depth\":3,\"title\":\"before\",\"slug\":\"before\"},{\"depth\":2,\"title\":\"Box Model\",\"slug\":\"box-model\"},{\"depth\":3,\"title\":\"Type of boxes:\",\"slug\":\"type-of-boxes\"},{\"depth\":4,\"title\":\"inline boxes\",\"slug\":\"inline-boxes\"},{\"depth\":4,\"title\":\"block-level boxes\",\"slug\":\"block-level-boxes\"},{\"depth\":4,\"title\":\"inline-block boxes\",\"slug\":\"inline-block-boxes\"},{\"depth\":3,\"title\":\"padding\",\"slug\":\"padding\"},{\"depth\":4,\"title\":\"reset margin ane padding\",\"slug\":\"reset-margin-ane-padding\"},{\"depth\":3,\"title\":\"margin\",\"slug\":\"margin\"},{\"depth\":4,\"title\":\"collapsing margins\",\"slug\":\"collapsing-margins\"},{\"depth\":3,\"title\":\"Dimensions\",\"slug\":\"dimensions\"},{\"depth\":4,\"title\":\"width\",\"slug\":\"width\"},{\"depth\":2,\"title\":\"position\",\"slug\":\"position\"},{\"depth\":3,\"title\":\"Normal Flow\",\"slug\":\"normal-flow\"},{\"depth\":3,\"title\":\"Absolute Position\",\"slug\":\"absolute-position\"},{\"depth\":3,\"title\":\"centering page\",\"slug\":\"centering-page\"},{\"depth\":2,\"title\":\"基本操作\",\"slug\":\"基本操作\"},{\"depth\":3,\"title\":\"CSS 注释\",\"slug\":\"css-注释\"},{\"depth\":3,\"title\":\"Fix bugs\",\"slug\":\"fix-bugs\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"HTML · 基础笔记\",\"created\":\"2021-12-06T03:59:47.000Z\",\"slug\":\"/html-basis/+page.md\",\"tags\":[\"HTML\"],\"lastmod\":\"2022-05-07T05:30:47.655Z\",\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"path\":\"/html-basis\",\"toc\":[{\"depth\":2,\"title\":\"HTML 是什么\",\"slug\":\"html-是什么\"},{\"depth\":2,\"title\":\"基本组成\",\"slug\":\"基本组成\"},{\"depth\":2,\"title\":\"框架\",\"slug\":\"框架\"},{\"depth\":2,\"title\":\"attributes\",\"slug\":\"attributes\"},{\"depth\":2,\"title\":\"tags\",\"slug\":\"tags\"},{\"depth\":2,\"title\":\"HTML entity\",\"slug\":\"html-entity\"},{\"depth\":2,\"title\":\"semantic HTML\",\"slug\":\"semantic-html\"},{\"depth\":2,\"title\":\"空格\",\"slug\":\"空格\"},{\"depth\":2,\"title\":\"当 div 中用 css 设置了图片时\",\"slug\":\"当-div-中用-css-设置了图片时\"},{\"depth\":2,\"title\":\"随堂练习\",\"slug\":\"随堂练习\"},{\"depth\":3,\"title\":\"商品卡片\",\"slug\":\"商品卡片\"},{\"depth\":3,\"title\":\"分页器 pagination\",\"slug\":\"分页器-pagination\"}],\"type\":\"article\",\"html\":\"\"},{\"title\":\"什么是设计洞察 · What is Insight\",\"created\":\"2021-10-15T15:07:14.533Z\",\"tags\":[\"Design Thinking\",\"翻译\"],\"keywords\":[\"insight\"],\"flags\":[],\"updated\":\"2023-06-27T08:26:42.162Z\",\"slug\":\"/insight/+page.md\",\"path\":\"/insight\",\"toc\":[{\"depth\":2,\"title\":\"insight 不是什么\",\"slug\":\"insight-不是什么\"},{\"depth\":2,\"title\":\"是什么\",\"slug\":\"是什么\"},{\"depth\":2,\"title\":\"五大要素\",\"slug\":\"五大要素\"},{\"depth\":2,\"title\":\"定义 Insight 的步骤\",\"slug\":\"定义-insight-的步骤\"},{\"depth\":3,\"title\":\"1.设定语境/场景\",\"slug\":\"1设定语境场景\"},{\"depth\":3,\"title\":\"2.沟通困境\",\"slug\":\"2沟通困境\"},{\"depth\":3,\"title\":\"3. 阐明原因\",\"slug\":\"3-阐明原因\"},{\"depth\":3,\"title\":\"4. 捕捉动机\",\"slug\":\"4-捕捉动机\"},{\"depth\":3,\"title\":\"5.构想理想\",\"slug\":\"5构想理想\"},{\"depth\":2,\"title\":\"如何表达\",\"slug\":\"如何表达\"},{\"depth\":3,\"title\":\"第一句话——描述现状和用户行为。\",\"slug\":\"第一句话描述现状和用户行为\"},{\"depth\":3,\"title\":\"第二句话——描述用户的困境，并说明造成困境的原因。\",\"slug\":\"第二句话描述用户的困境并说明造成困境的原因\"},{\"depth\":3,\"title\":\"第三句话——描述用户期望的最终理想状况。\",\"slug\":\"第三句话描述用户期望的最终理想状况\"},{\"depth\":3,\"title\":\"Tips\",\"slug\":\"tips\"},{\"depth\":2,\"title\":\"什么是一个好的’Insight’\",\"slug\":\"什么是一个好的insight\"},{\"depth\":2,\"title\":\"Insight->How Might We?\",\"slug\":\"insight-how-might-we\"},{\"depth\":2,\"title\":\"后记\",\"slug\":\"后记\"}],\"type\":\"article\",\"html\":\"\"}]"}</script>
+			<script>
+				{
+					__sveltekit_1utfk52 = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.f5655687.js"),
+						import("../_app/immutable/entry/app.08db6467.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
