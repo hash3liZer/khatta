@@ -6,7 +6,7 @@ export const site: SiteConfig = {
   title: './khatta.sh',
   subtitle: 'A Knowledge Base | Khatta is urdu for blog',
   lang: 'zh',
-  description: 'Khatta is to provide in depth articles regarding tech, CTFs, challenges and much more. ',
+  description: 'Khatta is a knowledge base and is created to provide in depth articles regarding tech, CTFs, challenges and much more.',
   author: {
     name: '@hash3liZer',
     avatar: '/assets/avatar.png',
