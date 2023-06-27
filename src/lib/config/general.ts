@@ -65,17 +65,17 @@ export const head: HeadConfig = {
       ? []
       : [
           // IndieAuth
-          '<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
-          '<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
-          '<link rel="me" href="https://github.com/sevichecc" />',
+          //'<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
+          //'<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
+          '<link rel="me" href="https://github.com/hash3liZer" />',
           // Umami Analytics
-          '<script data-cfasync="false"  defer data-do-not-track="true" data-website-id="2403ea30-74ff-4ffa-8264-556b9f3b2897" src="https://hexoverc.vercel.app/umami.js"></script>',
+          //'<script data-cfasync="false"  defer data-do-not-track="true" data-website-id="2403ea30-74ff-4ffa-8264-556b9f3b2897" src="https://hexoverc.vercel.app/umami.js"></script>',
           // splitbee
-          '<script async data-cfasync="false" src="https://cdn.splitbee.io/sb.js"></script>',
+          //'<script async data-cfasync="false" src="https://cdn.splitbee.io/sb.js"></script>',
           // Block Baiduspider
-          '<meta name="baiduspider" content="noindex,noarchive">',
+          //'<meta name="baiduspider" content="noindex,noarchive">',
           // Microsub
-          '<link rel="microsub" href="https://aperture.p3k.io/microsub/761">'
+          //'<link rel="microsub" href="https://aperture.p3k.io/microsub/761">'
         ],
   me: ['https://kongwoo.icu/@seviche']
 }
@@ -93,27 +93,27 @@ export const header: HeaderConfig = {
     //   text: 'Notes',
     //   link: '/notes'
     // },
-    {
-      text: 'Friends',
-      link: '/friends'
-    },
+    // {
+    //   text: 'Friends',
+    //   link: '/friends'
+    // },
     {
       text: 'About',
       link: '/about'
     },
-    {
-      text: 'etc',
-      children: [
-        {
-          text: 'Bookmarks',
-          link: 'https://airtable.com/shrpftxf6JgRomP2X'
-        },
-        {
-          text: 'Daily Notes',
-          link: 'https://x.seviche.cc'
-        }
-      ]
-    }
+    // {
+    //   text: 'etc',
+    //   children: [
+    //     {
+    //       text: 'Bookmarks',
+    //       link: 'https://airtable.com/shrpftxf6JgRomP2X'
+    //     },
+    //     {
+    //       text: 'Daily Notes',
+    //       link: 'https://x.seviche.cc'
+    //     }
+    //   ]
+    // }
   ]
 }
 
@@ -128,8 +128,8 @@ export const footer: FooterConfig = {
       link: '/privacy'
     }
   ],
-  html: '<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>',
-  since: '2021'
+  html: 'Hosted at <a href="https://github.com/hash3liZer/khatta">Khatta</a>',
+  since: '2023'
 }
 
 export const date: DateConfig = {
@@ -139,7 +139,6 @@ export const date: DateConfig = {
     weekday: 'short',
     month: 'short',
     day: 'numeric',
-    timeZone: 'Asia/Shanghai'
   }
 }
 
