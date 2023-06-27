@@ -12,21 +12,3 @@ jobs:
       contents: write
     with:
       publish_dir: build
-      
-  fix-cname:
-    needs: deploy
-    name: Copy CNAME
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      
-      - name: Fixing CNAME
-        run: |
-          git config --global user.name 'hash3liZer'
-          git config --global user.email 'me@shameerkashif.me'
-          git fetch                         # fetch branches
-          git checkout gh-pages
-          echo "blog.shameerkashif.me" > ./CNAME
-          git add ./CNAME
-          git commit -m "Commited CNAME"
-          git push origin gh-pages
