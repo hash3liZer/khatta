@@ -1,5 +1,5 @@
 ---
-title: About
+title: Resume
 created: 2022-05-06
 flags:
   - unlisted
