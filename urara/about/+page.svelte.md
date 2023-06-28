@@ -22,3 +22,18 @@ flags:
 </a>
 </div>
 </Profile>
+
+# Skills
+* **Programming Languages**: Python 3/2, Javascript, Typescript, C/C++, Bash, Powershell, HTML5/CSS, Innosetup, SQL
+* **Tools & Frameworks**: Django, React, Next, Terraform, Ansible, Vagrant, Snyk, Docker, CirlceCI, Github Actions, Kubernetes, FastAPI, DRF, MySQL, PostgreSQL,
+* **Platforms**: Openstack, AWS, Google Cloud, DigitalOcean, Linux, Kali, WinAPI
+
+# Experience
+* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD (Dec 2021 - Present) [Islamabad]
+* **Full Stack Engineer** Contract for a Cyber Security Project (2020 - 2022) [Remote]
+* **Full Stack (Freelance)** at <a href="https://upwork.com" target="_blank">Upwork</a> (2019 - Present) [Islamabad]
+
+# Education
+* Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
+
+
