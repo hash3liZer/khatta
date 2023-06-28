@@ -18,9 +18,9 @@ export const post: PostConfig = {
     giscus: {
       // src: 'https://giscus.kwaa.dev/client.js',
       repo: 'hash3liZer/khatta',
-      repoID: 'R_kgDOHSra4Q',
-      category: 'General',
-      categoryID: 'DIC_kwDOHSra4c4CO9ua',
+      repoID: 'R_kgDOJ0m0eA',
+      category: 'Q&A',
+      categoryID: 'DIC_kwDOJ0m0eM4CXgb8',
       theme: 'dark',
       lang: 'en'
     },
