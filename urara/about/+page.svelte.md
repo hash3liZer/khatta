@@ -23,17 +23,43 @@ flags:
 </div>
 </Profile>
 
-# Skills
+<hr> 
+
+## Skills
 * **Programming Languages**: Python 3/2, Javascript, Typescript, C/C++, Bash, Powershell, HTML5/CSS, Innosetup, SQL
 * **Tools & Frameworks**: Django, React, Next, Terraform, Ansible, Vagrant, Snyk, Docker, CirlceCI, Github Actions, Kubernetes, FastAPI, DRF, MySQL, PostgreSQL,
 * **Platforms**: Openstack, AWS, Google Cloud, DigitalOcean, Linux, Kali, WinAPI
 
-# Experience
+## Experience
 * **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD (Dec 2021 - Present) [Islamabad]
 * **Full Stack Engineer** Contract for a Cyber Security Project (2020 - 2022) [Remote]
 * **Full Stack (Freelance)** at <a href="https://upwork.com" target="_blank">Upwork</a> (2019 - Present) [Islamabad]
 
-# Education
+## Education
 * Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
 
+## Certifications
+* Certified  **Cyber Security** by ISC2 (2023)
+
+## Acheivements
+* 2nd Place in **PuCon'23** organized by Punjab University, online (2023)
+* 2nd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Network attacks and Exploitation]
+* 3rd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Speed Programming]
+* Awarded with **Top Rated Plus** badge on Upwork for bringing in a good value.
+
+## Projects
+* **[WiFiBroot](https://github.com/hash3liZer/wifibroot)**: A WiFi Pentest utility.
+* **[Subrake](https://github.com/hash3liZer/subrake)**: A Powerful subdomain enumeration & takeover assessment toolkit.
+* **[SillyRAT](https://github.com/hash3liZer/sillyrat)**: A cross platform python based RAT for getting reverse connections.
+* **[WiFiJammer](https://github.com/hash3liZer/wifijammer)**: A Scapy based CLI tool to jam nearby wireless devices.
+* **[SecureLinkCargos](https://securelinkcargos.com)**: A Web portal for a Shipping company.
+* **[Locohunt](https://github.com/hash3liZer/locohunt)**: A scanner for looking secrets in files and folders.
+
+## Volunteering and Startups
+* **Co Founder** at **[AirOverflow](https://airoverflow.com)** (2022-2023)
+* **Coding Lead** at Air University Cyber Security Society.
+* **Vice President** at Air university Bits & Bytes Society.
+
+## Contact
+* **Email**: [mailto:me@shameerkashif.me](me@shameerkashif.me)
 
