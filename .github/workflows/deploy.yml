@@ -12,3 +12,4 @@ jobs:
       contents: write
     with:
       publish_dir: build
+      cname: "blog.shameerkashif.me"
