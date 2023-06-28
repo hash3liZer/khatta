@@ -1,0 +1,1 @@
+import{w as s}from"./index.f6403797.js";const t={bridgy:{post:["mastodon"]},comment:{use:["Giscus"],style:"boxed",giscus:{repo:"hash3liZer/khatta",repoID:"R_kgDOHSra4Q",category:"General",categoryID:"DIC_kwDOHSra4c4CO9ua",theme:"dark",lang:"en"}}},o=s([]),e=s([]);export{o as a,t as p,e as t};
