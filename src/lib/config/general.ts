@@ -98,11 +98,11 @@ export const header: HeaderConfig = {
     //   link: '/friends'
     // },
     {
-      text: 'About',
-      link: '/about'
+      text: 'Resume',
+      link: '/resume'
     },
     {
-      text: "Profile",
+      text: "My Profile ➡️",
       link: "https://shameerkashif.me"
     }
     // {
