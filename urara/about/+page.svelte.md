@@ -61,7 +61,7 @@ flags:
 * **Vice President** at Air university Bits & Bytes Society.
 
 ## Contact
-* **Email**: [mailto:me@shameerkashif.me](me@shameerkashif.me)
+* **Email**: [me@shameerkashif.me](mailto:me@shameerkashif.me)
 * **Discord**: [hash3liZer](#)
 * **Website**: [https://shameerkashif.me](https://shameerkashif.me)
 
