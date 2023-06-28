@@ -62,4 +62,6 @@ flags:
 
 ## Contact
 * **Email**: [mailto:me@shameerkashif.me](me@shameerkashif.me)
+* **Discord**: [hash3liZer](#)
+* **Website**: [https://shameerkashif.me](https://shameerkashif.me)
 
