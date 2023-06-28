@@ -1,30 +1,15 @@
-My Tech Blog, base on [Urara](https://github.com/importantimport/urara)
+<img width="1440" alt="Screenshot 2023-06-28 at 2 31 49 PM" src="https://github.com/hash3liZer/khatta/assets/29171692/8525f8f9-563e-4708-a0bc-08ca54a5dd96">
 
-## Fork from
+<h1 align="center">Khatta 📜</h1>
+<p align="center">My Tech Blog, base on <a href="https://github.com/importantimport/urara" target="_blank">Urara</a></p>
+<p align="center"><a href="https://blog.shameerkashif.me" target="_blank">Website LINK 🖱️</a></p>
 
-- [kwchang083.dev](https://github.com/kwchang0831/kwchang0831.dev)
-- [kwaa/blog](https://github.com/kwaa/blog)
-
-### Custom Featrues:
+### Custom Featrues 📈
 
 - Copy code to clipboard
 - Project page
-- [zhlint](https://github.com/Jinjiang/zhlint)
-- Quote Style
-  ![](https://usc1.contabostorage.com/cc0b816231a841b1b0232d5ef0c6deb1:image/2022/07/637fdb5526081256980d8876bae46c23.png)
+- Resume
 
-## Deploy
+## Deployment 🚩
 
-- [Netlify]
-
-## TODO
-
-- [ ] Note Page
-- [ ] Archvie Page
-- [ ] Refactoring the atom feed format
-- [ ] NeoDB component
-- [ ] ...
-
-### License:
-
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- [x] Github Pages
