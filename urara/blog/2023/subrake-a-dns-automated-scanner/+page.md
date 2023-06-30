@@ -4,7 +4,7 @@ tags:
   - project
   - dns-zone-takeover
   - dns-zone-transfer
-  - subdomain takeover
+  - subdomain-takeover
   - bugbounty
   - infosec
   - reconnaissance
