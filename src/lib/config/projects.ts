@@ -25,7 +25,7 @@ export const projects: Project[] = [
     tags: ['subrake', 'infosec', 'bug-bounty', 'subdomain-takeover'],
     description: 'Subrake is a powerful subdomain gathering and takeover assessment platform. It can help you identify vulnerable subdomains that can be taken over by a third party by automating whole process. ',
     feature: 'Subdomain Takeover',
-    img: 'https://user-images.githubusercontent.com/29171692/206875533-0ac3ca1c-e183-4c4a-9bb2-b7206d1cfc50.png',
+    img: 'https://github.com/hash3liZer/khatta/assets/29171692/2395f58a-3073-4b91-ae4a-9a8ae2ec8897',
     link: 'https://github.com/hash3liZer/subrake'
   },
   // {
