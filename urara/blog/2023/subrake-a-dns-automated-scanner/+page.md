@@ -88,11 +88,11 @@ The normal procedure that is being followed or atleast i follow this:
 * I enter these nameservers into the Authoritative nameservers section in GoDaddy or namecheap.
 * Then i use the `Route53` service instead of GoDaddy or Namecheap to manage the records like `A`, `AAAA`, or `CNAME`. 
 
-Infact, if you ever worked with Cloudflare, you would know that you create a new website in Cloudflare. In result you get the nameservers. You then set the nameservers with the domain you purchased. 
+Infact, if you ever worked with **Cloudflare**, you would know that you create a new website in Cloudflare. In result you get the nameservers. You then set the `nameservers` with the domain you purchased. 
 
-After doing so, you add/edit/remove the records within the cloudflare panel. Lets suppose, after a year you plan to not use the Cloudflare service anymore. So, you delete your website from cloudflare but doesn't actually remove the authoritative entries in your domain settings from godaddy. 
+After doing so, you _add/edit/remove_ the records within the cloudflare panel. Lets suppose, after a year you plan to not use the Cloudflare service anymore. So, you delete your website from cloudflare but doesn't actually remove the authoritative entries in your domain settings from godaddy. 
 
-Since the nameserver entries already exist and still pointing to the service (aka cloudflare in this case), a third party can claim the service which would lead to zone takeover. 
+Since the nameserver entries already exist and still pointing to the service (aka cloudflare in this case), a third party can claim the service which would lead to **zone takeover**. 
 
 If you understand the above scenario, you can relate it to the subdomain takeover where you claim the stale service. But here, its the stale zone. 
 
@@ -133,7 +133,4 @@ Subrake can help you pick all 3 above cases. The complete information and detail
 <img src="https://user-images.githubusercontent.com/29171692/250178751-75abd71e-7765-4da0-8b08-1cc5e1e069c7.png">
 
 ## Conclusion
-First of all, i hope this guide was helpful 😅. We saw 3 different cases namely, Zone Transfer, Zone Takeover and Subdomain Takeover. The mitigation simply is to be aware of when you remove a service. Make sure the entries in your DNS gets updated as well. Or wrap the service completely. 
-
-
-
+First of all, i hope this guide was helpful 😅. We saw 3 different cases namely, Zone Transfer, Zone Takeover and Subdomain Takeover. The mitigation simply is to be aware of when you remove a service. Make sure the entries in your DNS gets updated as well. Or wrap the service completely.
