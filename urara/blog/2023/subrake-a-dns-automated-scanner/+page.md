@@ -121,9 +121,19 @@ You can also check for `SOA` which is what i would like to do instead (to be mor
 dig shameerkashif.me @ns1.digitalocean.com SOA
 ```
 
+Well, if it doesn't responsd, you can try to claim the service. As of now, the current vulnerable services are available at: [Can I Takeover DNS](https://github.com/indianajson/can-i-take-over-dns)
 
+Well, with subrake, it first tries to resolve each nameserver and if it does then it tries to guess the service and tells if its vulnerable or not. Something like this: 
 
+<img width="743" alt="image" src="https://github.com/hash3liZer/khatta/assets/29171692/3d55e662-c019-4062-8c46-4c9075c47a8e">
 
+## Using Subrake
+Subrake can help you pick all 3 above cases. The complete information and details can be found at the link i mentioned in the start of this blog. I am simply attaching a screenshot with the details. 
+
+<img src="https://user-images.githubusercontent.com/29171692/250178751-75abd71e-7765-4da0-8b08-1cc5e1e069c7.png">
+
+## Conclusion
+First of all, i hope this guide was helpful 😅. We saw 3 different cases namely, Zone Transfer, Zone Takeover and Subdomain Takeover. The mitigation simply is to be aware of when you remove a service. Make sure the entries in your DNS gets updated as well. Or wrap the service completely. 
 
 
 
