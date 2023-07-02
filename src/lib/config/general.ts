@@ -68,6 +68,7 @@ export const head: HeadConfig = {
           //'<link rel="authorization_endpoint" href="https://indieauth.com/auth">',
           //'<link rel="token_endpoint" href="https://tokens.indieauth.com/token">',
           '<link rel="me" href="https://github.com/hash3liZer" />',
+          '<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZRLH1SYB9"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-ZZRLH1SYB9");</script>',
           // Umami Analytics
           //'<script data-cfasync="false"  defer data-do-not-track="true" data-website-id="2403ea30-74ff-4ffa-8264-556b9f3b2897" src="https://hexoverc.vercel.app/umami.js"></script>',
           // splitbee
