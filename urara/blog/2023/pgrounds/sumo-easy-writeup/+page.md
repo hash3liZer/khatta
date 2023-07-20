@@ -1,9 +1,5 @@
 ---
-title: Proving Grounds Writeup for Lab SUMO
-tags:
-  - offsec
-  - proving-grounds
-  - oscp
+title: Writeup for Lab SUMO (Proving Grounds
 categories:
   - Bug Bounty
   - Projects
