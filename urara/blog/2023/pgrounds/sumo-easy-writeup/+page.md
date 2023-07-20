@@ -1,5 +1,5 @@
 ---
-title: Proving Grounds: Writeup for Lab SUMO
+title: Proving Grounds Writeup for Lab SUMO
 tags:
   - offsec
   - proving-grounds
