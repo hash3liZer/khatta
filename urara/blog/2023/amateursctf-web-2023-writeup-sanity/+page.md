@@ -1,10 +1,5 @@
 ---
 title: Web Sanity Writeup AmateursCTF 2023 DOM Clobbering and Prototype Pollution
-tags:
-  - amateursctf-2023
-  - ctf
-  - web
-  - writeup
 categories:
   - CTF
   - Writeups
