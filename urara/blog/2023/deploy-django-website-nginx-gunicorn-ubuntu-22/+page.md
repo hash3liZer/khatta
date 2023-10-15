@@ -300,7 +300,9 @@ And Boom! we've successfully deployed our website on Ubuntu server on AWS using 
 
 Thank you for visiting my website for this tutorial.
 
-Print("Good-bye")
+
+
+print("Good-bye")
 
 
  
