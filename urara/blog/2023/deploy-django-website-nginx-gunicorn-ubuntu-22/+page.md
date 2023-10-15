@@ -101,7 +101,7 @@ If you have any migrations to run, perform the action:
 ```
 python manage.py makemigrations
 python manage.py migrate
-python manage.py collectstatic**
+python manage.py collectstatic
 ```
 
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/b52d7c0d-4f54-4ff3-9292-8c111d2fa9ba)
