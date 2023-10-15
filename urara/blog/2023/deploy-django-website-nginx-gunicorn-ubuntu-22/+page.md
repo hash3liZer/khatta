@@ -85,6 +85,7 @@ source env/bin/activate
 If your project needs dependencies, you would've already installed them, i've just installed the requirements as it is a test project.
 
 
+
 ### Installing Django and Gunicorn
 
 
@@ -110,6 +111,7 @@ python manage.py collectstatic
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/b52d7c0d-4f54-4ff3-9292-8c111d2fa9ba)
 
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/005448c7-ac69-42ec-af56-9141a509abad)
+
 
 
 
@@ -286,9 +288,17 @@ Incase you run into some error, use the following command and it'll give the use
 sudo tail -f /var/log/nginx/error.log
 ```
 
+
+### Result
 Now we'll enter the public ip of the ubuntu vm on the web browser and /admin to get into the login page as this was my project.
 
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/a0a95772-30db-4c2e-af4a-f074f2b68788)
+
+And Boom! we've successfully deployed our website on Ubuntu server on AWS using Nginx and Gunicorn.
+
+Thank you for visiting my website for this tutorial.
+
+Print("Good-bye")
 
 
  
