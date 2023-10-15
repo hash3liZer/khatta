@@ -38,7 +38,6 @@ sudo apt update
 
 sudo apt install python3-pip python3-dev nginx
 
-![image](https://github.com/hash3liZer/khatta/assets/61083990/1faba017-2130-48b4-9df2-d750dd501f22)
 
 When installed, let's now create a python virtual environment.
 
@@ -46,9 +45,11 @@ sudo pip3 install virtualenv
 
 sudo apt install python3-virtualenv
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/1faba017-2130-48b4-9df2-d750dd501f22)
+
 Now that our virtual environment is created, we'll now create a directory which will host our Django applicaiton.
 
-If you have your project files locally on your computer, just make it directory and paste all the files in it. However, if you have a github repo, you'll need to clone it.
+A quick note here that If you have your project files locally on your computer, just make it directory and paste all the files in it. However, if you have a github repo, you'll need to clone it.
 
 Forexample:
 git clone https://github.com/rashiddaha/blogprojectdrf.git
@@ -56,6 +57,10 @@ git clone https://github.com/rashiddaha/blogprojectdrf.git
 Then we'll go to the directory created and create a virtual environment by:
 
 cd ~/blogprojectdrf
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/a5cabe58-21bd-4da2-8a1a-093abcb9be6f)
+
+
 then
 virtualenv env
 
@@ -63,6 +68,7 @@ Now activate this virtual environment by:
 
 source env/bin/activate
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/11a63e4d-f7e4-4478-95b4-b07f174e0d0b)
 
 
 ### Installing Django and Gunicorn
@@ -73,11 +79,21 @@ Install django gunicorn by
 
 **pip install django gunicorn**
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/0b50a975-e285-4ece-851d-129e68816995)
+
+
 If you have any migrations to run, perform the action:
 
 **python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic**
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/b52d7c0d-4f54-4ff3-9292-8c111d2fa9ba)
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/005448c7-ac69-42ec-af56-9141a509abad)
+
+
+
 
 ### Configuring Gunicorn
 
@@ -91,6 +107,11 @@ then
 
 sudo vim /etc/systemd/system/gunicorn.socket
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/93d7265e-c27d-4f79-a76d-d557f2fc661c)
+
+
+
+
 Enter the following content to the gunicorn.socket file
 
 [Unit]
@@ -100,6 +121,7 @@ ListenStream=/run/gunicorn.sock
 [Install]
 WantedBy=sockets.target
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/cc175aae-6b7f-4106-92be-e0f50516e060)
 
 Gunicorn.socket is done now we'll create a gunicorn service file
 
@@ -123,6 +145,9 @@ ExecStart=/home/ubuntu/blogprojectdrf/env/bin/gunicorn \
 [Install]
 WantedBy=multi-user.target
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/016b15f7-304d-401d-8db3-3275036148ec)
+
+Remember : change the paths and names to file according to your situtaion.
 
 Configuraiton is done now it's time to start and enable it.
 
@@ -131,6 +156,9 @@ run
 sudo systemctl start gunicorn.socket
 
 sudo systemctl enable gunicorn.socket
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/02f0eb6b-dea7-40f8-b597-78cb777e2864)
+
 
 ### Configuring Nginx as a reverse proxy
 
@@ -143,6 +171,9 @@ cd /etc/nginx/sites-enabled/
 Create a configuration file for Nginx also by:
 
 sudo vim /etc/nginx/sites-available/blog
+
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/ed5a8862-c941-4e1e-bd70-ca67874be153)
 
 paste the following content in it:
 
@@ -160,6 +191,9 @@ server {
 }
 
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/cf1f8a35-6f14-4af7-8a6c-66cd44156a81)
+
+
 Make sure all the paths are correct and the static directory name is according to your paths and names.
 
 now the file has been created, to activate it, we'll run the following command:
@@ -172,6 +206,10 @@ sudo gpasswd -a www-data <username>
 
 In my case, it is ubuntu. you can enter your username here.
 
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/320b9559-c7da-47ac-8cac-ab21818c77dd)
+
+
 Now we'll restart the Nginx and Gunicorn and there services by:
 
 sudo systemctl restart nginx
@@ -180,8 +218,16 @@ sudo service gunicorn restart
 
 sudo service nginx restart
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/926fab98-715b-46c9-9537-014da1f81dbf)
+
+
 
 Note: Make sure no other service or previous configuration is using the 0.0.0.0:80. if a services is using this previously nginx will not restrat successfully. To avoid the error the services to config files must be identified and modified.
+
+![image](https://github.com/hash3liZer/khatta/assets/61083990/91e45b9b-cc43-4683-b8bb-b198dadb82d4)
+
+As you can see only this file blog which we used in the deployement is using the port 80.
+
 
 
 
