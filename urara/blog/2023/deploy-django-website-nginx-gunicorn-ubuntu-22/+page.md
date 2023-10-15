@@ -82,6 +82,9 @@ source env/bin/activate
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/11a63e4d-f7e4-4478-95b4-b07f174e0d0b)
 
 
+If your project needs dependencies, you would've already installed them, i've just installed the requirements as it is a test project.
+
+
 ### Installing Django and Gunicorn
 
 
