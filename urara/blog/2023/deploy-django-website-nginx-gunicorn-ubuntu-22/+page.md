@@ -285,6 +285,9 @@ sudo tail -f /var/log/nginx/error.log
 
 Now we'll enter the public ip of the ubuntu vm on the web browser and /admin to get into the login page as this was my project.
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/a0a95772-30db-4c2e-af4a-f074f2b68788)
+
+
  
 
  
