@@ -34,11 +34,11 @@ But in general what you need is an online server with **Ubuntu 22.04** installed
 
 First, lets install the required packages. 
 
-'''
+```
 sudo apt update
 
 sudo apt install python3-pip python3-dev nginx
-'''
+```
 
 
 When installed, let's now create a python virtual environment.
