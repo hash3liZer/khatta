@@ -116,7 +116,7 @@ python manage.py collectstatic
 
 ### Configuring Gunicorn
 
-to configure we'll have to deactivate the virtual environment
+To configure we'll have to deactivate the virtual environment
 
 enter
 
@@ -180,7 +180,7 @@ WantedBy=multi-user.target
 
 Remember : change the paths and names to file according to your situtaion.
 
-Configuraiton is done now it's time to start and enable it.
+Configuration is done now it's time to start and enable it.
 
 run
 
