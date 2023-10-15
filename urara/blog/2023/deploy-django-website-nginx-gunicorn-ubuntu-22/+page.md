@@ -156,9 +156,11 @@ WantedBy=sockets.target
 
 Gunicorn.socket is done now we'll create a gunicorn service file
 
+```
 sudo vim /etc/systemd/system/gunicorn.service
+```
 
-paste the follwing content in the service file:
+Paste the follwing content in the service file:
 
 ```
 [Unit]
