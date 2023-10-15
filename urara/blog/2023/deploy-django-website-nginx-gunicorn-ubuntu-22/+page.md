@@ -38,6 +38,8 @@ sudo apt update
 
 sudo apt install python3-pip python3-dev nginx
 
+![image](https://github.com/hash3liZer/khatta/assets/61083990/1faba017-2130-48b4-9df2-d750dd501f22)
+
 When installed, let's now create a python virtual environment.
 
 sudo pip3 install virtualenv
