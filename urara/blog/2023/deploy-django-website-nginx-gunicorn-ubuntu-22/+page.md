@@ -32,26 +32,24 @@ But in general what you need is an online server with **Ubuntu 22.04** installed
 
 ### Installing Packages
 
-First, lets install the required packages. 
+First, lets install the required packages that we are going to use for this tutorial
 
-```
+```bash
 sudo apt update
-
 sudo apt install python3-pip python3-dev nginx
 ```
 
+Although not required but for the sake of cleanliness, we will use python `virtualenv` to install our packages. You can use one of the following to install the package
 
-When installed, let's now create a python virtual environment.
-
-```
+```bash
 sudo pip3 install virtualenv
-
+# OR
 sudo apt install python3-virtualenv
 ```
 
 ![image](https://github.com/hash3liZer/khatta/assets/61083990/1faba017-2130-48b4-9df2-d750dd501f22)
 
-Now that our virtual environment is created, we'll now create a directory which will host our Django applicaiton.
+Now we have our virtual environment, so lets move towards setting up a directory for our django application.
 
 A quick note here that If you have your project files locally on your computer, just make it directory and paste all the files in it. However, if you have a github repo, you'll need to clone it.
 
