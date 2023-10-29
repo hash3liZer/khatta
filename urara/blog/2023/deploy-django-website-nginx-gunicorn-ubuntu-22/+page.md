@@ -12,8 +12,8 @@ categories:
   - Development
 summary: A Detailed walkthrough of the process of deploying a django application on a ubuntu server from scratch. This guide covers the deployment stages with Gunicorn, NGINX and Postgresql.   
 created: 2023-09-11
-lastmod: 2023-09-11
-image: https://github.com/hash3liZer/khatta/assets/29171692/c70a5dc7-5294-45b7-8a9f-8a04ac9214b3
+lastmod: 2023-10-29
+image: https://github.com/hash3liZer/khatta/assets/29171692/ed7dd92d-f7d1-4646-9194-e02102945392
 ---
 
 ## Introduction
@@ -77,14 +77,14 @@ pip3 install django gunicorn psycopg2-binary
 
 ### Setting up Postgres (Database)
 
-You could move forward without this step if you are planning on using some database or the default sqlite. But please note that you will have to install the relevant packages for that. While in this case, i am only focusing on `postgres`. 
+You could move forward without this step if you are planning on using some other database or the default sqlite. But please note that you will have to install the relevant packages for that. While in this case, i am only focusing on `postgres`. 
 
 Launch `postgres`: 
 ```
 sudo -u postgres psql
 ```
 
-The next steps are supposted to be inside the `postgres` terminal. Create a new database. I am naming it `hashbase`. Setup a new user and assign it to the database that we just created: 
+The next steps are supposed to be inside the `postgres` terminal. Create a new database. I am naming it `hashbase`. Setup a new user and assign it to the database that we just created: 
 ```
 CREATE DATABASE hashbase;
 CREATE USER hashbaseuser WITH PASSWORD 'password1122';
@@ -188,7 +188,7 @@ service nginx stop
 python3 manage.py runserver 0.0.0.0:80
 ```
 
-Now, if you access your website at you would be able to see your project:
+Now, if you access your website at port `80` you would be able to see your project:
 ```python
 http://PUBLCI_IP_ADDRESS
 ```
