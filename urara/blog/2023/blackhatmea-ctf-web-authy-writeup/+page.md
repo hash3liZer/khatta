@@ -1,10 +1,10 @@
 ---
 title: Blackhat MEA CTF Qualifiers - Web Authy and Warm Me Up Writeup
 tags:
-  - blackhatmea-2023
+  - blackhatmea
   - ctf
   - authy
-  - warm-me-up
+  - warmme-up
   - unicode
   - broken-logic
 categories:
