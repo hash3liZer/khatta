@@ -1,5 +1,5 @@
 ---
-title: Blackhat MEA CTF Qualifiers - Web Authy and Warm Me Up Writeup
+title: Blackhat MEA CTF Qualifiers Web Authy and Warm Me Up Writeup
 tags:
   - blackhatmea
   - ctf
