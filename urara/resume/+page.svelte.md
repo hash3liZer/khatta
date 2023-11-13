@@ -31,7 +31,8 @@ flags:
 * **Platforms**: Openstack, AWS, Google Cloud, DigitalOcean, Linux, Kali, WinAPI
 
 ## Experience
-* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD (Dec 2021 - Present) [Islamabad]
+* **Cybersecurity Researcher** at <a href="https://trustline.sa" target="_blank">Trustline (Oct 2023 - Present) [Riyadh / Remote]
+* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD (Dec 2021 - Oct 2023) [Islamabad]
 * **Full Stack Engineer** Contract for a Cyber Security Project (2020 - 2022) [Remote]
 * **Full Stack (Freelance)** at <a href="https://upwork.com" target="_blank">Upwork</a> (2019 - Present) [Islamabad]
 
@@ -39,9 +40,11 @@ flags:
 * Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
 
 ## Certifications
-* Certified  **Cyber Security** by ISC2 (2023)
+* Certified  **Cyber Security** by ISC2 [2023]
+* Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
 
 ## Acheivements
+* 25h Place in **Blackhat MEA 23** CTF Qualifiers Round (2023)
 * 2nd Place in **PuCon'23** organized by Punjab University, online (2023)
 * 2nd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Network attacks and Exploitation]
 * 3rd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Speed Programming]
