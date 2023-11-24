@@ -14,6 +14,8 @@ summary: A complete writeup of sanity web challenge from AmateursCTF 2023. It co
 created: 2023-07-21
 lastmod: 2023-07-21
 image: https://github.com/hash3liZer/khatta/assets/29171692/c70a5dc7-5294-45b7-8a9f-8a04ac9214b3
+flags:
+  - unlisted
 ---
 
 ## Introduction
