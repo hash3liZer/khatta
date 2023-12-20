@@ -1,0 +1,18 @@
+---
+title: Writeups for Web challenges - PCC 2023
+tags:
+  - pcc-23
+categories:
+  - CTF
+  - Writeups
+summary: A complete writeup of sanity web challenge from AmateursCTF 2023. It covers the use of the Sanitizer API in browsers, DOM Clobbering, Parameter Pollution and XSS.  
+created: 2023-07-21
+lastmod: 2023-07-21
+image: https://github.com/hash3liZer/khatta/assets/29171692/c70a5dc7-5294-45b7-8a9f-8a04ac9214b3
+flags:
+  - unlisted
+---
+
+# SecureMe
+The challenge instructions are: 
+
