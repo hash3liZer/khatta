@@ -1,11 +1,11 @@
 ---
-title: Writeups for Web challenges PCC 2023
+title: Writeups for Web challenges from 23 PCC
 tags:
-  - pcc-23
+  - pcc23
 categories:
   - CTF
   - Writeups
-summary: These are the writeups for web challenges from PCC-23 held at Air University Islamabad  
+summary: These are the writeups for web challenges from PCC 23 held at Air University Islamabad  
 created: 2023-12-22
 lastmod: 2023-12-22
 image: https://github.com/hash3liZer/khatta/assets/29171692/661f1693-25ee-4ea3-8599-635e7b73cb6e
