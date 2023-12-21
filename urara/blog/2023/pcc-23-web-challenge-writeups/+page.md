@@ -2,6 +2,7 @@
 title: Writeups for Web challenges from 23 PCC
 tags:
   - pcc23
+  - ctf
 categories:
   - CTF
   - Writeups
