@@ -12,32 +12,47 @@
     
         <url>
             <loc>https://blog.shameerkashif.me/blog/2023/pcc-23-web-challenge-writeups</loc>
-            <lastmod>2023-12-21T21:08:16.672Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://blog.shameerkashif.me/blog/2023/blackhatmea-ctf-web-authy-writeup</loc>
-            <lastmod>2023-12-21T21:08:16.668Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://blog.shameerkashif.me/blog/2023/deploy-django-website-nginx-gunicorn-ubuntu-22</loc>
-            <lastmod>2023-12-21T21:08:16.668Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://blog.shameerkashif.me/blog/2023/amateursctf-web-2023-writeup-sanity</loc>
-            <lastmod>2023-12-21T21:08:16.668Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://blog.shameerkashif.me/blog/2023/subrake-a-dns-automated-scanner</loc>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://blog.shameerkashif.me/blog/2023/writeup-browselicious-challenge-bsidestlv-ctf</loc>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
+            <loc>https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2023</loc>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://blog.shameerkashif.me/privacy</loc>
-            <lastmod>2023-12-21T21:08:16.672Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://blog.shameerkashif.me/resume</loc>
-            <lastmod>2023-12-21T21:08:16.672Z</lastmod>
+            <lastmod>2023-12-21T21:24:00.670Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
