@@ -9,7 +9,7 @@ flags:
   import Profile from '$lib/components/extra/profile.svelte'
 </script>
 
-<Profile subname="Shameer Kashif" bio={`A Passionate Programmer with the love of Cyber Security and Automation. I love to design and program things and then also discover flaws in them.`} >
+<Profile subname="Shameer Kashif" bio={`A Guy in Cyber Security: Crafting Code & Breaking Barriers {{/**/}}`} >
 
 <div class="flex flex-col md:flex-row gap-4 mt-4">
 <a href="https://shameerkashif.me" rel="noopener external" target="_blank" class="group flex-1 relative overflow-hidden btn btn-block normal-case border-none no-underline bg-[#110019] hover:bg-[#0077B3]">
@@ -31,10 +31,11 @@ flags:
 * **Platforms**: Openstack, AWS, Google Cloud, DigitalOcean, Linux, Kali, WinAPI
 
 ## Experience
-* **Cybersecurity Researcher** at <a href="https://trustline.sa" target="_blank">Trustline (Oct 2023 - Present) [Riyadh / Remote]
-* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD (Dec 2021 - Oct 2023) [Islamabad]
-* **Full Stack Engineer** Contract for a Cyber Security Project (2020 - 2022) [Remote]
-* **Full Stack (Freelance)** at <a href="https://upwork.com" target="_blank">Upwork</a> (2019 - Present) [Islamabad]
+* **Appsec Engineer** at <a href="https://trustline.sa" target="_blank">Trustline</a> Full time (Oct 2023 - Present) [Riyadh, KSA / Remote]
+* **Cybersecurity Researcher** at <a href="https://thecozm.com/" target="_blank">The COZM</a> Contract (July 2023 - Present) [London, United Kingdom / Remote]
+* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD</a> Full Time (Dec 2021 - Oct 2023) [Islamabad / Onsite]
+* **Full Stack Engineer** Contract for a Cyber Security Project (2020 - 2022) [Sao Palo, Brazil / Remote]
+* **Full Stack (Freelance)** at <a href="https://upwork.com" target="_blank">Upwork</a> Freelance (2019 - Present) [Islamabad]
 
 ## Education
 * Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
