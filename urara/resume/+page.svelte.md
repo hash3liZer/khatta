@@ -45,8 +45,8 @@ flags:
 * Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
 
 ## Acheivements
-* 25h Place in **Blackhat MEA 23** CTF Qualifiers Round (2023)
-* 2nd Place in **PuCon'23** organized by Punjab University, online (2023)
+* Winner in **Digital Pakistan Cyber Security Hackathon** Capture the Flag 2023
+* 27h Place in **Blackhat MEA 23** Capture the Flag (2023)
 * 2nd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Network attacks and Exploitation]
 * 3rd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Speed Programming]
 * Awarded with **Top Rated Plus** badge on Upwork for bringing in a good value.
