@@ -9,7 +9,7 @@ flags:
   import Profile from '$lib/components/extra/profile.svelte'
 </script>
 
-<Profile subname="Shameer Kashif" bio={`A Guy in Cyber Security, Crafting Code & Breaking Barriers`} >
+<Profile subname="Shameer Kashif" bio={`A Guy in Cyber Security, Crafting Code & Breaking Applications`} >
 
 <div class="flex flex-col md:flex-row gap-4 mt-4">
 <a href="https://shameerkashif.me" rel="noopener external" target="_blank" class="group flex-1 relative overflow-hidden btn btn-block normal-case border-none no-underline bg-[#110019] hover:bg-[#0077B3]">
