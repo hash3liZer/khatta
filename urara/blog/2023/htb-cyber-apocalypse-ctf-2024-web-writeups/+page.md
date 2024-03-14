@@ -91,7 +91,7 @@ try {
 
 At first i confirmed the injection by providing the `$name` value to the `text` parameter and it replaced it with `world`. Now, doing a bit of googling, i discovered a `CVE` for this specific version of `Velocity`.
 I used the following payload with the name param
-```c#
+```
 #set($e="e");$e.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("whoami")
 ```
 
