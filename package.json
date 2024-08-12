@@ -5,7 +5,7 @@
   "repository": "importantimport/urara",
   "homepage": "https://github.com/importantimport/urara",
   "bugs": "https://github.com/importantimport/urara/issues",
-  "packageManager": "8",
+  "packageManager": 8,
   "author": "藍+85CD",
   "scripts": {
     "clean": "node urara.js clean",
