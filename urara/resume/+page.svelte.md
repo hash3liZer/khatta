@@ -35,7 +35,7 @@ flags:
 ## Experience
 * **Application Security Engineer (Appsec & DevSecOps)** at <a href="https://trustline.sa" target="_blank">Trustline</a> Full time (Oct 2023 - Present) [Riyadh, KSA / Remote]
 * **Cyber Security Specialist & DevOps** at <a href="https://thecozm.com/" target="_blank">The COZM</a> Contract (July 2023 - Present) [London, United Kingdom / Remote]
-* **DevSecOps Engineer** at <a href="https://www.horizon.com.pk" target="_blank">Horizon Tech LTD</a> Full Time (Dec 2021 - Oct 2023) [Islamabad / Onsite]
+* **DevSecOps Engineer** at <a href="#k" target="_blank">SNSkies</a> Full Time (Dec 2021 - Oct 2023) [Islamabad / Onsite]
 * **Full Stack Engineer (Cyber Security)** Contract for a Cyber Security Project (2020 - 2022) [Sao Palo, Brazil / Remote]
 * **Full Stack & Cyber Security** at <a href="https://upwork.com" target="_blank">Upwork</a> Freelance (2019 - Present) [Islamabad]
 
