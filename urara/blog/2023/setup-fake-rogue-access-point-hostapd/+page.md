@@ -10,7 +10,7 @@ lastmod: 2023-08-25
 image: https://github.com/user-attachments/assets/471e01a7-df63-414e-9370-6b8deafe6686
 ---
 
-In this guide, i'll try my best to explain how one can use Fake (Rogue) Access Point to phish passphrases and other important target details over the air by showing targets a fabricated document. We will using using hostapd, a well-written ad-hoc software. A Rogue (Fake) Access Point is hosted to tempt and influence users to add their details on some page.
+**In this guide, i'll try my best to explain how one can use Fake (Rogue) Access Point to phish passphrases and other important target details over the air by showing targets a fabricated document. We will using using hostapd, a well-written ad-hoc software. A Rogue (Fake) Access Point is hosted to tempt and influence users to add their details on some page.**
 
 As this rogue network is under the control of attacker, this allows him to stage several types of attacks against the nodes.
 
@@ -69,7 +69,8 @@ Setup a new hostapd configuration file and write the following instructions into
 ```bash
 nano hostapd.conf
 ```
-```
+
+```bash
 interface=wlan1mon
 driver=nl80211
 ssid=[Fake AP Name] 
@@ -94,7 +95,8 @@ hostapd hostapd.conf
 
 ### Multiple Access Points (Optional)
 If you have multiple targets or you are willing to write a script for multiple targets, hostapd provides this support too. You can provide multiple virtual interfaces to operate multiple networks from a single wireless card at a time. Tough it would slow down the whole process and would cause some other network problems. The standard usage of this is to host 3 networks from a single card at a time.
-```conf
+
+```bash
 interface=wlan1mon
 hw_mode=g
 channel=6
@@ -121,7 +123,8 @@ We have dnsmasq for this part. dnsmasq is a Dynamic Host Configuration Protocol 
 ```bash
 nano dnsmasq.conf
 ```
-```conf
+
+```bash
 interface=wlan1mon
 dhcp-range=192.168.1.2,192.168.1.30,255.255.255.0,12h
 dhcp-option=3,192.168.1.1
