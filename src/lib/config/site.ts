@@ -3,7 +3,7 @@ import type { SiteConfig } from '$lib/types/site'
 export const site: SiteConfig = {
   protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://',
   domain: 'blog.shameerkashif.me',
-  title: './khatta.sh',
+  title: './khatta.sh | کھاتا',
   subtitle: 'A Knowledge Base | Khatta is urdu for blog',
   lang: 'zh',
   description: 'Khatta is a knowledge base and is created to provide in depth articles regarding tech, CTFs, challenges and much more.',
