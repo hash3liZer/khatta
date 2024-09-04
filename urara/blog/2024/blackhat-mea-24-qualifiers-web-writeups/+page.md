@@ -13,8 +13,8 @@ image: https://github.com/user-attachments/assets/07220c38-8cb9-4961-b1c2-7020b0
 
 ## Watermelon
 
-  All love for Watermelons 🍉🍉🍉
-  Note: The code provided is without jailing, please note that when writing exploits.
+> All love for Watermelons 🍉🍉🍉
+> Note: The code provided is without jailing, please note that when writing exploits.
 
 Lets fire up the docker container and start reviewing the code. Seemed like a very minimilistic app with a few features to login/signup and then we can basically upload a file. 
 Reviewing the file upload functionality, we know that it can't be a shell since its Python and it wouldn't make sense to do so. Lets have a close look:
@@ -87,7 +87,7 @@ Login with the `user/pass` and get the hash at `/admin` endpoint.
 
 ## Free Flag
 
-  Free Free
+> Free Free
 
 Download the source code and started a local container. Reviewing the source code, we have a very simple `PHP` to give filename that can be accessed on the local system: 
 ```php
@@ -140,7 +140,7 @@ curl -i http://localhost/ --data 'file=PAYLOADHERE'
 
 ## Notey
 
-  I created a note sharing website for everyone to talk to themselves secretly. Don't try to access others notes, grass isn't greener :'( )
+> I created a note sharing website for everyone to talk to themselves secretly. Don't try to access others notes, grass isn't greener :'( )
 
 Downloaded the source code and started reviewing the code. During the initial setup of the challenge, i faced one major issue and that was `pwnjail`. This was totally new to me. 
 If you look at the `Dockerfile`, you would find this part:
@@ -292,8 +292,8 @@ Ran the script and got the flag on terminal.
 
 ## Fastest Delivery Service
 
-  No time for description, I had some orders to deliver : D 
-  Note: The code provided is without jailing, please note that when writing exploits.
+> No time for description, I had some orders to deliver : D 
+> Note: The code provided is without jailing, please note that when writing exploits.
 
 Again, we are dealing with `pwnjail` here. So, we will need to write a script in order to fully exploit the instance URL. This challenge was basically inspired from
 some of the challenges that have been already given in other CTFs. We are dealing with a RCE here in EJS that can be exploited through prototype pollution. 
