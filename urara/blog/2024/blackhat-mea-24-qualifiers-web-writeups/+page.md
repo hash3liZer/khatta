@@ -1,7 +1,8 @@
 ---
-title: BlackhatMEA 2024 CTF Writeups for all web challenges
+title: BlackhatMEA 2024 CTF Writeups for all web challenges (Qualifiers)
 tags:
   - blackhatmea-2024
+  - qualifiers
 categories:
   - CTF
   - Writeups
