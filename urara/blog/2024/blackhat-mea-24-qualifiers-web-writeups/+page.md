@@ -144,7 +144,7 @@ curl -i http://localhost/ --data 'file=PAYLOADHERE'
 
 Downloaded the source code and started reviewing the code. During the initial setup of the challenge, i faced one major issue and that was `pwnjail`. This was totally new to me. 
 If you look at the `Dockerfile`, you would find this part:
-```Dockerfile
+```
 FROM pwn.red/jail
 COPY --from=final / /srv
 COPY docker-entrypoint.sh /srv/app/run
@@ -219,7 +219,7 @@ https://www.npmjs.com/package/mysql
 
 From the documentation, this is what hit me:
 
-  Objects are turned into `key = 'val'` pairs for each enumerable property on the object. If the property's value is a function, it is skipped; if the property's value is an object, `toString()` is called on it and the returned value is used.
+> Objects are turned into `key = 'val'` pairs for each enumerable property on the object. If the property's value is a function, it is skipped; if the property's value is an object, `toString()` is called on it and the returned value is used.
 
 Firing up a local terminal and testing the `mysql.format` function with a dictionary gives us the following query:
 ```
