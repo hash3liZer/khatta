@@ -2,7 +2,7 @@
   "name": "./khatta.sh | کھاتا",
   "short_name": "./khatta.sh | کھاتا",
   "lang": "zh",
-  "description": "Khatta is a knowledge base and is created to provide in depth articles regarding tech, CTFs, challenges and much more.",
+  "description": "Khatta is a blog by hash3liZer. This blog is for articles regarding tech, CTFs, challenges, travelling and more.",
   "id": "https://blog.shameerkashif.me/",
   "start_url": "/",
   "scope": "/",
