@@ -86,10 +86,10 @@ export const header: HeaderConfig = {
     provider: 'duckduckgo'
   },
   nav: [
-    {
-      text: 'Projects',
-      link: '/projects'
-    },
+    // {
+    //   text: 'Projects',
+    //   link: 'https://github.com/hash3liZer/'
+    // },
     // {
     //   text: 'Notes',
     //   link: '/notes'
@@ -99,11 +99,11 @@ export const header: HeaderConfig = {
     //   link: '/friends'
     // },
     {
-      text: 'Resume',
+      text: 'About Me',
       link: '/resume'
     },
     {
-      text: "My Profile ➡️",
+      text: "Who@mi ➡️",
       link: "https://shameerkashif.me"
     }
     // {
@@ -128,10 +128,10 @@ export const footer: FooterConfig = {
       text: 'Feed',
       link: '/atom.xml'
     },
-    {
-      text: 'Privacy',
-      link: '/privacy'
-    }
+    // {
+    //   text: 'Privacy',
+    //   link: '/privacy'
+    // }
   ],
   html: 'Hosted at <a href="https://github.com/hash3liZer/khatta">Khatta</a>',
   since: '2023'
