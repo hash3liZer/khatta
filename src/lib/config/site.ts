@@ -4,9 +4,9 @@ export const site: SiteConfig = {
   protocol: import.meta.env.URARA_SITE_PROTOCOL ?? import.meta.env.DEV ? 'http://' : 'https://',
   domain: 'blog.shameerkashif.me',
   title: './khatta.sh | کھاتا',
-  subtitle: 'A Knowledge Base | Khatta is urdu for blog',
+  subtitle: "hash3liZer's blog | Khatta is urdu for blog",
   lang: 'zh',
-  description: 'Khatta is a knowledge base and is created to provide in depth articles regarding tech, CTFs, challenges and much more.',
+  description: 'Khatta is a blog by hash3liZer. This blog is for articles regarding tech, CTFs, challenges, travelling and more.',
   author: {
     name: '@hash3liZer',
     avatar: '/assets/avatar.png',
