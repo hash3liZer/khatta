@@ -5,13 +5,13 @@ export const site: SiteConfig = {
   domain: 'blog.shameerkashif.me',
   title: './khatta.sh | کھاتا',
   subtitle: "hash3liZer's blog | Shameer Kashif",
-  lang: 'zh',
-  description: 'Khatta is a blog by hash3liZer. This blog is for articles regarding tech, CTFs, challenges, travelling and more.',
+  lang: 'en',
+  description: 'Khatta is a blog by Shameer Kashif (@hash3liZer). This blog is for articles regarding tech, CTFs, challenges, travelling and more.',
   author: {
     name: '@hash3liZer',
     avatar: '/assets/avatar.png',
     status: '🖤',
-    bio: 'A Random Programmer (() => {})()',
+    bio: '0xFF (() => {})()',
     metadata: [
       {
         icon: 'i-mdi-github',
