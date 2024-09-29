@@ -43,15 +43,16 @@ flags:
 * Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
 
 ## Certifications
+* Certified **OSCP** (Offensive Security Certified Professional) [2024]
 * Certified  **Cyber Security** by ISC2 [2023]
 * Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
 
 ## Acheivements
+* Winner in **Turkish COMSEC HackMaster** Capture The Flag 2024
 * Winner in **Digital Pakistan Cyber Security Hackathon** Capture the Flag 2023
 * 27h Place in **Blackhat MEA 23** Capture the Flag (2023)
 * 2nd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Network attacks and Exploitation]
 * 3rd Place in **Digital Pakistan Cyber Security Hackathon** organized by MoITT and IGNITE, on-site in Islamabad (2021) [Speed Programming]
-* Awarded with **Top Rated Plus** badge on Upwork for bringing in a good value.
 
 ## Projects
 * **[WiFiBroot](https://github.com/hash3liZer/wifibroot)**: A WiFi Pentest utility.
