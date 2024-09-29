@@ -44,8 +44,8 @@ flags:
 
 ## Certifications
 * Certified **OSCP** (Offensive Security Certified Professional) [2024]
-* Certified  **Cyber Security** by ISC2 [2023]
 * Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
+* Certified  **Cyber Security** by ISC2 [2023]
 
 ## Acheivements
 * Winner in **Turkish COMSEC HackMaster** Capture The Flag 2024
