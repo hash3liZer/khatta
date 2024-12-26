@@ -48,6 +48,8 @@ flags:
 * Certified  **Cyber Security** by ISC2 [2023]
 
 ## Acheivements
+* Winner in **Digital Pakistan Cyber Security Hackathon (Red Team)** Capture the Flag 2024
+* Winner in **Digital Pakistan Cyber Security Hackathon (Blue Team)** Capture the Flag 2024
 * Winner in **Turkish COMSEC HackMaster** Capture The Flag 2024
 * Winner in **Digital Pakistan Cyber Security Hackathon** Capture the Flag 2023
 * 27h Place in **Blackhat MEA 23** Capture the Flag (2023)
