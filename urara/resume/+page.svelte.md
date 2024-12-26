@@ -43,6 +43,7 @@ flags:
 * Bachelors in **Cyber Security** from <a href="https:/au.edu.pk" target="_blank">Air University, Islamabad</a> (2019-2023)
 
 ## Certifications
+* Certified **OSWP** (Offensive Security Wireless Professional) [2024]
 * Certified **OSCP** (Offensive Security Certified Professional) [2024]
 * Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
 * Certified  **Cyber Security** by ISC2 [2023]
