@@ -33,6 +33,7 @@ flags:
 * **Platforms & Cloud**: Openstack, AWS, Google Cloud, DigitalOcean, Linux, Kali, WinAPI
 
 ## Experience
+* **Business Work** at MMD LLC Full Time (2019 - Present) [Faisalabad, Pakistan / Onsite]
 * **Application Security Engineer (Appsec & DevSecOps)** at <a href="https://trustline.sa" target="_blank">Trustline</a> Full time (Dec 2023 - Present) [Riyadh, KSA / Remote]
 <!--* **Cyber Security Specialist & DevOps** at <a href="https://thecozm.com/" target="_blank">The COZM</a> Contract (July 2023 - Present) [London, United Kingdom / Remote] -->
 * **DevSecOps Engineer** at <a href="#k" target="_blank">ZettaByte (Pvt)</a> Full Time (Dec 2021 - Oct 2023) [Islamabad / Onsite]
