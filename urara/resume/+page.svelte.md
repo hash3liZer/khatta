@@ -28,9 +28,9 @@ flags:
 I mean, nothing much to add here yet. 
 
 ## Certifications
-* Certified **OSWP** (Offensive Security Wireless Professional) [2024]
-* Certified **OSCP** (Offensive Security Certified Professional) [2024]
-* Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023]
+* Certified **OSWP** (Offensive Security Wireless Professional) [2024] ([Verify](https://www.credential.net/2e957c40-be15-4b4c-82cb-3e1f3fcc7809#acc.OHhCtfWw))
+* Certified **OSCP** (Offensive Security Certified Professional) [2024] ([Verify](https://www.credential.net/9bfec6e0-b32a-4ef9-8ff2-046050f7712f))
+* Certified **eCPPTv2** (Certified Professional Penetration Tester) [2023] ([Verify](https://www.credential.net/386f2ce7-a44d-4340-b2c2-d7aa8bd73a2a))
 * Certified  **Cyber Security** by ISC2 [2023]
 
 ## Acheivements
