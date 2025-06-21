@@ -34,7 +34,7 @@ I mean, nothing much to add here yet.
 * Certified  **Cyber Security** by ISC2 [2023]
 
 ## Acheivements
-* Qualified for Hackday 2024 in Paris, France 2025
+* Qualified for Hackday 2024 in Paris, France 2025 ([Team AirOverflow](https://ctftime.org/event/2615/))
 * 20th in **Blackhat MEA 24** Capture the Flag 2024
 * Winner in **Digital Pakistan Cyber Security Hackathon (Red Team)** Capture the Flag 2024
 * Winner in **Digital Pakistan Cyber Security Hackathon (Blue Team)** Capture the Flag 2024
